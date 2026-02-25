@@ -1,0 +1,153 @@
+:root {
+  /* Colors */
+  --dzone-color-black: #000000;
+  --dzone-color-gray-dark: #262626;
+  --dzone-color-gray: #595959;
+  --dzone-color-gray-light: #8c8c8c;
+  --dzone-color-border: #d9d9d9;
+  --dzone-color-border-light: #e8e8e8;
+  --dzone-color-border-lighter: #d2d2d2;
+  --dzone-color-border-hover: #bfbfbf;
+  --dzone-color-bg-light-blue: #eaf1ff;
+  --dzone-color-bg-light-gray: #f8f9fa;
+  --dzone-color-bg-lighter-gray: #fafafa;
+  --dzone-color-bg-scrollbar: #f1f1f1;
+  --dzone-color-bg-container: #ffffff;
+  --dzone-color-white: #ffffff;
+  --dzone-color-success: #00a200;
+  --dzone-color-success-hover: #73d13d;
+  --dzone-color-error: #ff4d4f;
+  --dzone-color-error-hover: #ff7875;
+  --dzone-color-info: #1890ff;
+  --dzone-color-info-hover: #40a9ff;
+  --dzone-color-primary: #323131;
+  --dzone-color-primary-hover: #49494a;
+  --dzone-color-gray-50: #f9fafb;
+  --dzone-color-gray-600: #707070;
+  --dzone-color-blue-50: #eaf1ff;
+  --dzone-color-text-secondary: #4f4e4ec2;
+
+  /* Brand */
+  --dzone-color-brand-black: #323131;
+  --dzone-color-brand-gray-dark: #49494a;
+  --dzone-color-brand-gray: #595959;
+  --dzone-color-brand-gray-medium: #d6d6d5;
+  --dzone-color-brand-gray-light: #8c8c8c;
+  --dzone-color-brand-gray-lighter: #eaeaea;
+  --dzone-color-brand-btn-border: #9ea3ae;
+  --dzone-color-brand-btn-bg: #ebeef0;
+  --dzone-color-brand-icon-purple: #727be2;
+
+  /* Chat / Dzent */
+  --dzent-color-icon-purple: #7f88fe;
+  --dzent-color-checkmark-teal: #4fbd9d;
+  --dzent-color-bg-light: #f9fafb;
+  --dzent-color-bg-light-blue: #f3f6ff;
+  --dzent-color-bg-selected: #e6f7ff;
+  --dzent-color-bg-action: #dce5fc;
+  --dzent-color-bg-white: #fff;
+  --dzent-color-border-light: #e5e6eb;
+  --dzent-color-border-medium: #bcbcbc;
+  --dzent-color-text-muted: #777a81;
+  --dzent-color-text-black: #000;
+  --dzent-color-text-white: #ffffff;
+  --dzent-color-btn-dark: #323131;
+  --dzent-color-btn-primary: #3d71fb;
+  --dzent-color-gray-medium: #b3b3b3;
+  --dzent-color-gray-dark: #6c6c6c;
+
+  /* Shadows */
+  --dzone-shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.03);
+  --dzone-shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.08);
+  --dzone-shadow-md: 0 4px 8px rgba(0, 0, 0, 0.12);
+
+  /* Spacing */
+  --dzone-spacing-2xs: 0.125rem;
+  --dzone-spacing-xs: 0.375rem;
+  --dzone-spacing-sm: 0.5rem;
+  --dzone-spacing-md: 0.625rem;
+  --dzone-spacing-lg: 0.75rem;
+  --dzone-spacing-xl: 0.875rem;
+  --dzone-spacing-2xl: 1rem;
+  --dzone-spacing-3xl: 1.25rem;
+  --dzone-spacing-4xl: 1.5rem;
+  --dzone-spacing-5xl: 1.75rem;
+  --dzone-spacing-6xl: 2rem;
+  --dzone-spacing-7xl: 2.5rem;
+  --dzone-spacing-8xl: 4.375rem;
+
+  /* Font sizes */
+  --dzone-font-size-xs: 0.625rem;
+  --dzone-font-size-sm: 0.75rem;
+  --dzone-font-size-base: 0.875rem;
+  --dzone-font-size-md: 1rem;
+  --dzone-font-size-lg: 1.125rem;
+  --dzone-font-size-xl: 1.25rem;
+
+  /* Heights */
+  --dzone-height-button-sm: 1.625rem;
+  --dzone-height-button-md: 1.75rem;
+  --dzone-height-element-md: 2.5rem;
+  --dzone-height-element-lg: 2.75rem;
+  --dzone-height-header: 3.5rem;
+
+  /* Border radius */
+  --dzone-radius-sm: 4px;
+  --dzone-radius-md: 6px;
+  --dzone-radius-lg: 8px;
+  --dzone-radius-xl: 12px;
+
+  /* Font weights */
+  --dzone-font-weight-normal: 400;
+  --dzone-font-weight-medium: 500;
+  --dzone-font-weight-semibold: 600;
+  --dzone-font-weight-bold: 700;
+
+  /* Widths */
+  --dzone-width-dropdown-lg: 18rem;
+  --dzone-width-pagination-select: 4rem;
+  --dzone-width-sider: 15rem;
+
+  /* Layout */
+  --dzone-sider-margin: 0.5rem;
+  --dzone-auth-container-width-lg: 37.25rem;
+  --dzone-auth-container-width-sm: calc(100% - 2rem);
+
+  /* Pagination */
+  --dzone-pagination-button-size: 2rem;
+  --dzone-pagination-text-color: #2e3d66;
+  --dzone-pagination-height: 4rem;
+  --dzone-pagination-button-bg: #6c727f;
+  --dzone-pagination-button-hover-bg: #6c727f;
+  --dzone-pagination-button-disabled-bg: #d3d5da;
+  --dzone-pagination-button-disabled-color: #ffffff;
+
+  /* Notification */
+  --dzone-notification-success-bg: #e4ffef;
+  --dzone-notification-success-border: #04ca56;
+  --dzone-notification-success-icon: #04ca56;
+  --dzone-notification-error-bg: #ffe8e1;
+  --dzone-notification-error-border: #ff602e;
+  --dzone-notification-error-icon: #ff602e;
+}
+
+/* Dark theme overrides */
+[data-theme='dark'] {
+  --dzone-color-bg-container: #1f1f1f;
+  --dzone-color-bg-light-gray: #141414;
+  --dzone-color-bg-lighter-gray: #1a1a1a;
+  --dzone-color-bg-light-blue: #111a2e;
+  --dzone-color-white: #1f1f1f;
+  --dzone-color-black: #ffffff;
+  --dzone-color-gray-dark: #e8e8e8;
+  --dzone-color-gray: #bfbfbf;
+  --dzone-color-gray-light: #8c8c8c;
+  --dzone-color-border: #434343;
+  --dzone-color-border-light: #303030;
+  --dzone-color-border-lighter: #434343;
+  --dzone-color-border-hover: #595959;
+  --dzone-color-text-secondary: #a0a0a0;
+  --dzone-shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.2);
+  --dzone-shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.3);
+  --dzone-shadow-md: 0 4px 8px rgba(0, 0, 0, 0.4);
+}

@@ -1,0 +1,15 @@
+export enum FieldType {
+  Text = 'text',
+  Select = 'select',
+  Multiselect = 'multiselect',
+  SearchableSelect = 'searchable-select',
+  SearchableMultiSelect = 'searchable-multiselect',
+  Checkbox = 'checkbox',
+  RadioButton = 'radio',
+  Date = 'date',
+  Number = 'number',
+  TextArea = 'textarea',
+  FileUpload = 'file-upload',
+  GroupedSelect = 'grouped-select',
+  CustomComponent = 'custom-component',
+}

@@ -1,0 +1,252 @@
+.container {
+  background: url('/images/login-bg.jpeg') no-repeat center center fixed;
+  background-color: #3e88f4;
+  background-size: cover;
+  min-height: 100dvh;
+  width: 100vw;
+  padding: 3rem 1rem 1.75rem 1rem;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.card {
+  padding: 2.4rem 4.5rem;
+  background-color: #00000085;
+  border-radius: 3.125rem;
+  box-shadow: 0 0 16px 0 rgba(35, 90, 237, 0.16) inset;
+  text-align: center;
+  width: var(--dzone-auth-container-width-lg);
+  max-width: 100%;
+  position: relative;
+  box-sizing: border-box;
+}
+
+/* Input field height */
+.card :global(.ant-form-item .ant-input),
+.card :global(.ant-form-item .ant-input-password),
+.card :global(.ant-form-item .ant-input-affix-wrapper) {
+  height: 3rem;
+}
+
+/* Gradient dot beside DZ One pill */
+.gradientDot {
+  position: relative;
+  width: 0.5rem;
+  height: 0.5rem;
+  background: linear-gradient(109deg, #FFB8EC 4.89%, #F3D6FF 51.39%, #7D88FF 97.01%);
+  border-radius: 50%;
+  top: 1.5rem;
+}
+
+@media (max-width: 650px) {
+  .card {
+    width: var(--dzone-auth-container-width-sm);
+    padding: 2rem 1.5rem;
+  }
+}
+
+.welcomeText {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.brandPill {
+  border: 2px solid #fff;
+  border-radius: 3.125rem;
+  padding: 0.5rem 2rem;
+  display: inline-flex;
+  align-items: center;
+  color: #fff;
+  font-size: 2.25rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.tagline {
+  color: #fff;
+  font-size: 1.6875rem;
+}
+
+.poweredBy {
+  color: #fff;
+  font-size: 1.125rem;
+  margin-top: 0.5rem;
+}
+
+.poweredBySection {
+  margin-top: 0;
+}
+
+.brandLogo {
+  width: 15.625rem;
+}
+
+.copyright {
+  color: #fff;
+  text-align: center;
+}
+
+/* ── Auth form input styling ── */
+
+/* Labels */
+.card :global(.ant-form-item-label > label) {
+  color: #fff;
+}
+
+/* Required asterisk — move after label text (matches old impl) */
+.card :global(.ant-form-item-label > label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::before) {
+  position: absolute;
+  right: 0;
+}
+
+.card :global(.ant-form-item-label > label.ant-form-item-required) {
+  position: relative;
+}
+
+/* Form control — text-align left, input height */
+.card :global(.ant-form-item) {
+  text-align: left;
+}
+
+/* Text input — transparent bg, bottom border only */
+.card :global(.ant-input) {
+  background: transparent !important;
+  border: none !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3) !important;
+  border-radius: 0 !important;
+  color: #fff;
+  padding-left: 0;
+  padding-right: 0;
+  font-weight: 600;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.card :global(.ant-input)::placeholder {
+  color: #fff;
+  opacity: 1;
+  font-weight: 600;
+}
+
+.card :global(.ant-input):focus,
+.card :global(.ant-input):hover,
+.card :global(.ant-input):focus-visible,
+.card :global(.ant-input-focused) {
+  background: transparent !important;
+  border: none !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6) !important;
+  box-shadow: none !important;
+  outline: none !important;
+  outline-offset: 0 !important;
+}
+
+/* Error state — keep bottom border style, just change to error color */
+.card :global(.ant-input-status-error:not([disabled]):not(.ant-input-disabled)) {
+  border: none !important;
+  border-bottom: 2px solid var(--ant-color-error, rgb(255, 146, 146)) !important;
+}
+
+.card :global(.ant-input-affix-wrapper-status-error) {
+  border: none !important;
+  border-bottom: 2px solid var(--ant-color-error, rgb(255, 146, 146)) !important;
+}
+
+.card :global(.ant-input[disabled]) {
+  color: rgba(255, 255, 255, 0.65);
+  background: transparent !important;
+  border-bottom-color: rgba(255, 255, 255, 0.2) !important;
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+/* Password input wrapper */
+.card :global(.ant-input-password),
+.card :global(.ant-input-affix-wrapper) {
+  background: transparent !important;
+  border: none !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3) !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  font-weight: 600;
+  color: #fff;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.card :global(.ant-input-password):hover,
+.card :global(.ant-input-password):focus-within,
+.card :global(.ant-input-affix-wrapper):hover,
+.card :global(.ant-input-affix-wrapper-focused),
+.card :global(.ant-input-affix-wrapper):focus-within {
+  background: transparent !important;
+  border: none !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6) !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.card :global(.ant-input-password .ant-input) {
+  background: transparent !important;
+  border: none !important;
+  color: #fff;
+  padding-left: 0;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.card :global(.ant-input-password .ant-input):focus,
+.card :global(.ant-input-password .ant-input):focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.card :global(.ant-input-password .ant-input)::placeholder {
+  color: #fff;
+  opacity: 1;
+  font-weight: 600;
+}
+
+.card :global(.ant-input-suffix) {
+  color: #fff;
+}
+
+/* Checkbox */
+.card :global(.ant-checkbox-inner) {
+  border: 2px solid #fff !important;
+  background: transparent !important;
+}
+
+.card :global(.ant-checkbox-checked .ant-checkbox-inner) {
+  border-color: #fff !important;
+  background: transparent !important;
+}
+
+.card :global(.ant-checkbox:hover .ant-checkbox-inner),
+.card :global(.ant-checkbox-wrapper:hover .ant-checkbox-inner) {
+  border: 2px solid #fff !important;
+  background: transparent !important;
+}
+
+.card :global(.ant-checkbox-checked .ant-checkbox-inner::after) {
+  border-color: #fff;
+}
+
+/* Validation error messages */
+.card :global(.ant-form-item-explain-error) {
+  text-align: left;
+}
+
+/* Autofill override */
+.card :global(input:-webkit-autofill),
+.card :global(input:-webkit-autofill:hover),
+.card :global(input:-webkit-autofill:focus),
+.card :global(input:-webkit-autofill:active) {
+  -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+  -webkit-text-fill-color: #fff !important;
+  background-color: transparent !important;
+  transition: background-color 5000s ease-in-out 0s;
+  border: none !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3) !important;
+}

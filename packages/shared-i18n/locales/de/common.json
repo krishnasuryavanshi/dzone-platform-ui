@@ -1,0 +1,36 @@
+{
+  "and": "and",
+  "And": "And",
+  "or": "or",
+  "Or": "Or",
+  "pages": {
+    "poweredBy": "Powered by",
+    "tagline": "Content that clicks. Leads that convert.",
+    "copyright": "© 2024 All copyrights reserved to Digitalzone.",
+    "welcomeMessage": "Welcome to DZ One",
+    "termsAndPolicies": "By creating an account, you agree to the",
+    "termsOfUse": "Terms of use",
+    "privacyPolicy": "Privacy policy"
+  },
+  "form": {
+    "login": {
+      "email": {
+        "label": "Email",
+        "required": "Email is required",
+        "placeholder": "Enter your email",
+        "invalid": "Invalid email"
+      },
+      "password": {
+        "label": "Password",
+        "required": "Password is required",
+        "placeholder": "Enter your Password",
+        "invalid": "Invalid password"
+      },
+      "notYou": "Not you?",
+      "signIn": "Sign In",
+      "next": "Next",
+      "rememberMe": "Remember me",
+      "forgotPassword": "Forgot password?"
+    }
+  }
+}

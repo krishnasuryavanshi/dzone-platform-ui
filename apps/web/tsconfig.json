@@ -1,0 +1,18 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@dzone/shared-ui": ["../../packages/shared-ui/src"],
+      "@dzone/shared-lib": ["../../packages/shared-lib/src"],
+      "@dzone/shared-store": ["../../packages/shared-store/src"],
+      "@dzone/shared-auth": ["../../packages/shared-auth/src"],
+      "@dzone/shared-i18n": ["../../packages/shared-i18n/src"],
+      "@dzone/shared-styles": ["../../packages/shared-styles/src"],
+      "@dzone/shared-logger": ["../../packages/shared-logger/src"],
+      "@dzone/shared-feature-flags": ["../../packages/shared-feature-flags/src"]
+    }
+  },
+  "include": ["src", "vite-env.d.ts"]
+}

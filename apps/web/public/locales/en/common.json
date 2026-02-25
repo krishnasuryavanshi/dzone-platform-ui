@@ -1,0 +1,1294 @@
+{
+  "and": "and",
+  "And": "And",
+  "or": "or",
+  "Or": "Or",
+  "viewMore": "View more",
+  "upload": "Upload",
+  "status": {
+    "active": "Active",
+    "inactive": "Inactive"
+  },
+  "label": {
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "created": "Created",
+    "status": "Status",
+    "actions": "Actions"
+  },
+  "unsavedWarningModal": {
+    "title": "Are you sure you want to leave this page?",
+    "message": "You have unsaved content. You might lose any information you have entered to any fields in this page. Are you sure you want to proceed?",
+    "cancel": "Stay on Page",
+    "ok": "Leave Page"
+  },
+  "pages": {
+    "tagline": "Content that clicks. Leads that convert.",
+    "copyright": "© 2024 All copyrights reserved to Digitalzone.",
+    "welcomeMessage": "Welcome to",
+    "dzOne": "DZ One",
+    "demandGenHelper": "Your demand gen coworker is ready to help.",
+    "termsAndPolicies": "By creating an account, you agree to the",
+    "termsOfUse": "Terms of use",
+    "privacyPolicy": "Privacy policy",
+    "associateClonedItemWithCampaign": "Cloned line item will be associated to the selected campaign.",
+    "transformAndExportLeads": "Transform & Export Leads",
+    "transformAndExport": "Transform & Export",
+    "organizations": {
+      "name": "organizations",
+      "title": "Organizations",
+      "label": { "managedByDigitalZone": "Managed by DigitalZone" }
+    },
+    "clearFilters": "Remove all applied filters",
+    "dashboard": {
+      "name": "dashboard",
+      "title": "Dashboard",
+      "label": {
+        "numberOfContactsGenerated": "Number of Contacts Generated",
+        "numberOfLeadsDelivered": "Number of Leads Delivered",
+        "percentageOfContactsThatBecomeDeliverableLeads": "Percentage of Contacts that Become Deliverable Leads",
+        "averageTimeFromCampaignCreationToFirstLeadDelivery": "Average Time from Campaign Creation to First Lead Delivery",
+        "averageTimeFromContactResearchToQualityAudit": "Average Time from Contact Research to Quality Audit",
+        "averageTimeFromQaReadyToLeadDelivery": "Average Time from QA Ready to Lead Delivery",
+        "averageTimeInPacingReserved": "Average Time in Pacing - Reserved",
+        "internalRejectRate": "Internal Reject Rate",
+        "marketerReturnRate": "Marketer Return Rate",
+        "internalRejectionReasons": "Internal Rejection Reasons",
+        "clientRejectionReasons": "Client Rejection Reasons",
+        "detailsOfInaccurateData": "Details of Inaccurate Data",
+        "leadStatus": "Lead Status",
+        "count": "Count",
+        "statusAndCount": "Status & Count",
+        "noOfBillableLeads": "Number of Billable Leads",
+        "dollarAmountForBilledLeads": "Dollar Amount for Billed Leads",
+        "leadsDelivered": "Leads Delivered",
+        "leadsByJobTitle": "Leads By Job Title",
+        "leadsByCountry": "Leads By Country",
+        "pacing": "Pacing",
+        "uniqueAccountsReached": "Unique Accounts Reached"
+      }
+    },
+    "riskToLaunch": {
+      "campaignName": "Campaign Name",
+      "lineItem": "Line Item",
+      "supplier": "Supplier",
+      "targetStartDate": "Target Start Date",
+      "actualStartDate": "Actual Start Date",
+      "daysOverdue": "Days Overdue",
+      "atRiskReason": "At-Risk Reason"
+    },
+    "riskToDeliver": {
+      "campaignName": "Campaign Name",
+      "lineItem": "Line Item",
+      "supplier": "Supplier",
+      "targetStartDate": "Target Start Date",
+      "actualStartDate": "Actual Start Date",
+      "targetGoal": "Target Goal",
+      "leadsDelivered": "Leads Delivered",
+      "pacingGap": "Pacing Gap",
+      "atRiskReason": "At-Risk Reason",
+      "daysLeft": "Days Left",
+      "actions": "Actions"
+    },
+    "riskLineItems": {
+      "lineItem": "Line Item",
+      "marketer": "Marketer",
+      "targetGoal": "Target Goal",
+      "leadsPublished": "Leads Published",
+      "leadsRemaining": "Leads Remaining",
+      "endDate": "End Date",
+      "daysLeft": "Days Left",
+      "atRiskReason": "At-Risk Reason",
+      "actions": "Actions"
+    },
+    "executive": {
+      "clientName": "Client Name",
+      "campaignName": "Campaign Name",
+      "bookedRevenue": "Booked Revenue",
+      "invoiced": "Invoiced",
+      "ioNumber": "IO Number",
+      "leadsDelivered": "Leads Delivered",
+      "leadsGoal": "Leads Goal",
+      "status": "Status",
+      "valueAddLeads": "Value Add Leads",
+      "actions": "Actions"
+    },
+    "dzent": {
+      "title": "DZ One"
+    },
+    "leads": {
+      "name": "leads",
+      "title": "Leads",
+      "allLeads": "All Leads",
+      "id": "Lead Status UUID",
+      "batchId": "Batch ID",
+      "contactResearchDate": "Contact Research Date",
+      "marketingQualificationDate": "Marketing Qualification Date",
+      "marketingQualificationStatus": "Marketing Qualification Status",
+      "leadEnrichmentDate": "Lead Enrichment Date",
+      "leadEnrichmentStatus": "Lead Enrichment Status",
+      "qualityAuditDate": "Quality Audit Date",
+      "qualityAuditStatus": "Quality Audit Status",
+      "pacingDate": "Pacing Date",
+      "pacingStatus": "Pacing Status",
+      "formatForDeliveryDate": "Format for Delivery Date",
+      "formatForDeliveryStatus": "Format for Delivery Status",
+      "deliveredDate": "Delivered Date",
+      "deliveryStatus": "Delivery Status",
+      "clientFeedbackDate": "Client Feedback Date",
+      "clientFeedbackStatus": "Client Feedback Status",
+      "invoiceDate": "Invoice Date",
+      "invoiceStatus": "Invoice Status",
+      "paymentDate": "Payment Date",
+      "paymentStatus": "Payment Status",
+      "leadStatus": "Status",
+      "validate": "Validate",
+      "returnedReason": "Returned Reason",
+      "publishedOn": "Published On",
+      "returnedOn": "Returned On",
+      "createdOn": "Created On",
+      "updatedOn": "Updated On",
+      "updatedBy": "Updated By",
+      "lead": {
+        "id": "Lead ID",
+        "trackingId": "Tracking ID",
+        "leadId": "Lead ID",
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "email": "Email",
+        "companyName": "Company Name",
+        "linkedinLink": "LinkedIn Link",
+        "country": "Country",
+        "countryCode": "Country Code",
+        "phone": "Phone",
+        "jobTitle": "Job Title",
+        "deleted": "Deleted",
+        "jobFunction": "Job Function",
+        "jobLevel": "Job Level",
+        "domain": "Domain",
+        "industry": "Industry",
+        "distinctEmployeeSize": "Employee Size (Distinct)",
+        "distinctRevenueSize": "Revenue Size (Distinct)",
+        "rfpEmployeeSize": "Target Employee Size",
+        "rfpRevenueSize": "Target Revenue Size",
+        "streetAddress": "Street Address",
+        "city": "City",
+        "state": "State",
+        "postalCode": "Postal Code",
+        "optIn": "Opt-In",
+        "doubleOptIn": "Double Opt-In",
+        "supplier": "Supplier",
+        "asset1Name": " Asset 1 Name",
+        "asset1DownloadDate": "Asset 1 Download Date",
+        "asset2Name": "Asset 2 Name",
+        "asset2DownloadDate": "Asset 2 Download Date"
+      },
+      "client": {
+        "id": "Client UUID",
+        "clientId": "Client ID"
+      },
+      "campaign": {
+        "id": "Campaign UUID",
+        "campaignId": "Campaign ID",
+        "campaignName": "Campaign Name"
+      },
+      "lineItem": {
+        "id": "LineItem UUID",
+        "lineItemId": "Line Item ID",
+        "lineItemName": "Line Item Name"
+      }
+    },
+    "users": {
+      "name": "users",
+      "title": "Users",
+      "label": {
+        "allUsers": "All Users",
+        "newUser": "New User",
+        "addUsers": "Add Users",
+        "viewUsers": "View Users",
+        "changeStatus": "This role cannot be marked as inactive because users are mapped to it. Please remove users from this role to proceed."
+      }
+    },
+    "clients": {
+      "name": "clients",
+      "title": "Clients",
+      "label": {
+        "allClients": "All Clients",
+        "newClient": "New Client",
+        "clientId": "Client ID",
+        "clientName": "Client Name",
+        "crmId": "CRM ID",
+        "financeId": "Finance ID",
+        "status": "Status",
+        "createdAt": "Created",
+        "actions": "Actions",
+        "clientDetails": "Client Details",
+        "viewClient": "View Client",
+        "editClient": "Edit Client"
+      }
+    },
+    "campaigns": {
+      "name": "campaigns",
+      "title": "Campaigns",
+      "label": {
+        "campaign": "Campaign",
+        "allCampaigns": "All Campaigns",
+        "newCampaign": "New Campaign",
+        "clientId": "Client ID",
+        "campaignId": "Campaign ID",
+        "campaignName": "Campaign Name",
+        "marketer": "Marketer",
+        "ioNumber": "IO Number",
+        "totalLeads": "Total Leads",
+        "status": "Status",
+        "createdAt": "Created At",
+        "updatedAt": "Updated At",
+        "actions": "Actions",
+        "campaignDetails": "Campaign Details",
+        "viewCampaign": "View Campaign",
+        "addLineItem": "Add Line Item",
+        "viewAll": "All Campaigns",
+        "viewOnlyAssignedToMe": "Campaigns Assigned to Me",
+        "requiredInfo": "Fill in the required information to create the Campaign",
+        "targetStartDate": "Target Start Date",
+        "targetEndDate": "Target End Date",
+        "actualStartDate": "Actual Start Date",
+        "actualEndDate": "Actual End Date",
+        "budget": "Budget (USD)",
+        "lineItemsDeliveryPercentage": "Line Items Delivered (%)",
+        "assignedTo": "Assigned To",
+        "createdBy": "Created By",
+        "updatedBy": "Updated By"
+      }
+    },
+    "lineItems": {
+      "name": "lineItems",
+      "title": "Line Items",
+      "label": {
+        "name": "Line Item",
+        "requiredInfo": "Enter the required information to create the Line Item",
+        "customQuestions": "Feel free to add any extra questions you'd like to include in the Lead template.",
+        "validationSettings": "Take a moment to review the validation options you've chosen. Feel free to make any adjustments if needed.",
+        "allLineItems": "All Line Items",
+        "lineItemId": "Line Item ID",
+        "clientId": "Client ID",
+        "campaignId": "Campaign ID",
+        "lineItemName": "Line Item Name",
+        "newLineItem": "New Line Item",
+        "supplierName": "Supplier",
+        "supplierCode": "Supplier Code",
+        "pacing": "Pacing",
+        "product": "Product",
+        "cpl$": "CPL ($)",
+        "totalLeads": "Total Leads",
+        "actions": "Actions",
+        "created": "Created",
+        "status": "Status",
+        "viewLineItem": "View Line Item",
+        "lineItemDetails": "Line Item Details",
+        "cpl": "CPL (USD)",
+        "targetLeadGoal": "Target Lead Goal",
+        "lineItemTargetStartDate": "Target Start Date",
+        "lineItemTargetEndDate": "Target End Date",
+        "actualStartDate": "Actual Start Date",
+        "actualEndDate": "Actual End Date",
+        "assignedTo": "Assigned To",
+        "launchCompletionPercentage": "Launch Completion (%)",
+        "leadsDeliveryPercentage": "Leads Delivered (%)",
+        "cloneLineItem": "Clone Line Item",
+        "selectCampaign": "Select Campaign",
+        "viewAll": "All Line Items",
+        "viewOnlyAssignedToMe": "Line Items Assigned to Me",
+        "validationSettingsHeading": "Validation Settings",
+        "validationSettingsDescription": "Configure the validation settings for line items here"
+      },
+      "pacingChart": {
+        "serial": "Serial",
+        "date": "Date",
+        "dayOfAWeek": "Days of Week",
+        "leadsRequired": "Leads Required"
+      }
+    },
+    "campaignManagement": {
+      "title": "Campaign Management",
+      "clients": {
+        "title": "Clients"
+      },
+      "campaigns": {
+        "title": "Campaigns"
+      },
+      "lineItems": {
+        "title": "Line Items"
+      }
+    },
+
+    "searchData": {
+      "title": "Search Data",
+      "searchDatabase": {
+        "title": "Search Database"
+      },
+      "csvDataEnrichment": {
+        "title": "CSV Data Enrichment"
+      }
+    },
+    "searchDatabase": {
+      "name": "search-database",
+      "title": "Search Database",
+      "label": {}
+    },
+    "connectPlatforms": {
+      "title": "Connect Platforms",
+      "pixels": {
+        "title": "Pixels"
+      }
+    },
+
+    "delivery": {
+      "title": "Delivery",
+      "disabledTooltipMessage": "Please select a delivery template to enable transformation.",
+      "enabledTooltipMessage": "Click to transform and export leads using the selected delivery template."
+    },
+    "integrationHub": {
+      "title": "Integrations Hub"
+    },
+    "integrations": {
+      "title": "Integrations"
+    },
+    "templates": {
+      "title": "Templates",
+      "label": {
+        "newTemplate": "New Template",
+        "templateName": "Template Name",
+        "templateId": "Template ID",
+        "deliveryType": "Delivery Type",
+        "integrationName": "Integration Name",
+        "deliveryObject": "Delivery Object",
+        "lastUsed": "Last Used",
+        "lastUpdated": "Last Updated",
+        "createdBy": "Created By",
+        "lastEdited": "Last Edited",
+        "updatedAt": "Updated Date",
+        "actions": "Actions",
+        "client": "Client",
+        "marketerName": "Marketer Name",
+        "marketer": "Marketer",
+        "campaign": "Campaign",
+        "lineItem": "Line Item Name",
+        "openTemplate": "Open Template",
+        "editTemplate": "Edit Template",
+        "createTemplate": "Create Template",
+        "order": "Order",
+        "visibility": "Visibility",
+        "sourceNameColumn": "DZ One Field Name (Source)",
+        "destinationNameColumn": "Delivery Field Name (Destination) *",
+        "example": "Example",
+        "exportSample": "Export Sample",
+        "saveTemplate": "Save Template",
+        "create": "Create",
+        "update": "Update",
+        "cancel": "Cancel",
+        "fieldsVisible": "fields visible",
+        "templateDetails": "Template Details",
+        "templateDescription": "Template Description",
+        "lineItems": "Line Items",
+        "clients": "Clients",
+        "fieldMapping": "Field Mapping",
+        "fieldProperties": "Field Properties",
+        "dataType": "Data Type",
+        "minCharacter": "Minimum Characters",
+        "maxCharacter": "Maximum Characters",
+        "dataMapper": "Data Mapper",
+        "destinationTooltip": "This should match with the exact field name in the destination system.",
+        "dataTypeTooltip": "Choose Data Type per the destination system requirements.",
+        "dataMapperTooltip": "Field value taxonomy transformation (i.e. United States > USA).",
+        "description": "Description",
+        "heading": "Data Dictionary",
+        "subHeading": "This helps you to choose the correct data type for each field, by showing what each of the data types mean."
+      }
+    },
+    "leadValidationSettings": {
+      "title": "Validation Settings",
+      "label": {
+        "name": "Name",
+        "marketer": "Marketer",
+        "updatedAt": "Updated On",
+        "createdAt": "Created On",
+        "actions": "Actions",
+        "createNew": "Create New Setting",
+        "view": "View Setting"
+      }
+    },
+    "adminConsole": {
+      "title": "Admin Console"
+    },
+    "rolesAndPermissions": {
+      "title": "Roles and Permissions",
+      "label": {
+        "name": "Roles",
+        "basicDetails": "Basic Details",
+        "roleName": "Role Name",
+        "description": "Description",
+        "numberOfUsers": "Number of Users",
+        "type": "Tenant Type",
+        "editMode": "Edit mode",
+        "actions": "Actions",
+        "createNewRole": "Create New Role",
+        "permissions": "Permissions",
+        "lastUpdated": "Last Updated",
+        "status": "Status",
+        "viewPermissions": "View Permissions",
+        "modulesHeading": "Give permissions to the modules",
+        "actionsHeading": "Give permissions to the actions",
+        "drawerHeading": "Customize {{actionName}} Permissions",
+        "discardChanges": "Discarding the changes",
+        "discardChangesMessage": "The changes you made to the permissions have not been saved. Are you sure  to discard them?",
+        "statusChangeTitle": "Are you sure you want to change the status?",
+        "statusChangeContent": "This action will affect the role status, please confirm."
+      }
+    },
+    "analytics": {
+      "name": "analytics",
+      "title": "Analytics",
+      "label": {
+        "leadValidationQualityChartTitle": "Lead Validation Quality Breakdown",
+        "returnReasonsChartTitle": "Return Reasons Breakdown",
+        "leadPerformanceChartTitle": "Lead Performance Trend",
+        "budgetPacingChartTitle": "Budget Pacing Visualization",
+        "campaignTimelineChartTitle": "Campaign Timeline View"
+      },
+      "marketers": {
+        "title": "Marketers"
+      },
+      "supplier": {
+        "title": "Supplier"
+      }
+    }
+  },
+  "form": {
+    "actions": {
+      "cancel": "Cancel",
+      "save": "Save",
+      "submit": "Submit",
+      "reset": "Reset",
+      "saveAndClose": "Save and Close",
+      "next": "Next",
+      "clone": "Clone",
+      "cloneAndEdit": "Clone & Edit",
+      "discard": "Discard",
+      "proceed": "Proceed"
+    },
+    "login": {
+      "email": {
+        "label": "Email",
+        "required": "Email is required",
+        "placeholder": "Enter your email",
+        "invalid": "Invalid email"
+      },
+      "password": {
+        "label": "Password",
+        "required": "Password is required",
+        "placeholder": "Enter your Password",
+        "invalid": "Invalid password"
+      },
+      "notYou": "Not you?",
+      "signIn": "Sign In",
+      "next": "Next",
+      "rememberMe": "Remember me",
+      "forgotPassword": "Forgot password?"
+    },
+    "forgotPassword": {
+      "email": {
+        "label": "Email",
+        "required": "Email is required",
+        "placeholder": "Enter your registered email",
+        "invalid": "Invalid email"
+      },
+      "next": "Next",
+      "resend": "Resend Link",
+      "headingCheckYourEmailInbox": "Check your Email Inbox",
+      "messageLinkReceived": "You'll receive a link in the {{email}} supplied that will enable you to reset your account password.",
+      "headingResetPassword": "Reset your Password",
+      "messageResetPassword": "Reset your password by providing your Account email below."
+    },
+    "addClients": {
+      "formHeader": "New Client",
+      "formSubHeader": "Add Client Details",
+      "editFormHeader": "Edit Client",
+      "editFormSubHeader": "Edit Client Details",
+      "form": {
+        "clientName": {
+          "label": "Client Name",
+          "placeholder": "Enter Name",
+          "formValidationError": "This field is required"
+        },
+        "crmID": {
+          "label": "CRM ID",
+          "placeholder": "Enter ID",
+          "formValidationError": "This field is required"
+        },
+        "financeID": {
+          "label": "Finance ID",
+          "placeholder": "Enter ID",
+          "formValidationError": "This field is required"
+        },
+        "status": {
+          "label": "Status",
+          "placeholder": "Select Status",
+          "formValidationError": "This field is required"
+        },
+        "clientID": {
+          "label": "Client ID",
+          "placeholder": "C768",
+          "formValidationError": "This field is required"
+        }
+      }
+    },
+    "addCampaign": {
+      "formHeader": "New Campaign",
+      "formClientSubHeader": "Add Client Details",
+      "formCampaignSubHeader": "Add Client Details",
+      "form": {
+        "clientName": {
+          "label": "Client Name",
+          "placeholder": "Select Client",
+          "formValidationError": "This field is required"
+        },
+        "ClientID": {
+          "label": "client ID",
+          "placeholder": "C674"
+        },
+        "campaignName": {
+          "label": "Campaign Name",
+          "placeholder": "Enter Name",
+          "formValidationError": "This field is required"
+        },
+        "ioNumber": {
+          "label": "IO Number",
+          "placeholder": "Enter Number",
+          "formValidationError": "This field is required"
+        },
+        "status": {
+          "label": "Status",
+          "placeholder": "Select Status",
+          "formValidationError": "This field is required"
+        },
+        "startDate": {
+          "label": "Start Date",
+          "placeholder": "dd-mm-yyyy",
+          "formValidationError": "This field is required"
+        },
+        "endDate": {
+          "label": "End Date",
+          "placeholder": "dd-mm-yyyy",
+          "formValidationError": "This field is required"
+        }
+      }
+    },
+    "editCampaign": {
+      "formHeader": "Edit Campaign"
+    },
+    "createCampaign": {
+      "formHeader": "Create Campaign",
+      "editFormHeader": "Edit Campaign",
+      "basicInfo": "Basic Details",
+      "campaign": "Campaign",
+      "marketerDetails": "Marketer Details",
+      "campaignDetails": "Campaign Details",
+      "agencyDetails": "Agency Details",
+      "connections": "Connections",
+      "goals": "Goals",
+      "terms": "Terms",
+      "delivery": "Delivery",
+      "collaborators": "Collaborators",
+      "marketerCode": {
+        "label": "Marketer",
+        "placeholder": "Select Marketer",
+        "requiredValidationError": "This field is required"
+      },
+      "tenantCode": {
+        "label": "Marketer ID",
+        "placeholder": "ORG123",
+        "requiredValidationError": "This field is required"
+      },
+      "marketer": {
+        "label": "Marketer"
+      },
+      "campaignId": {
+        "label": "Campaign ID",
+        "requiredValidationError": "This field is required"
+      },
+      "name": {
+        "label": "Campaign Name",
+        "placeholder": "Enter Campaign Name",
+        "requiredValidationError": "This field is required",
+        "patternValidationError": "Only - and _ special characters are allowed."
+      },
+      "campaignDescription": {
+        "label": "Campaign Description",
+        "placeholder": "Enter Campaign Description",
+        "requiredValidationError": "This field is required"
+      },
+      "isCustRepresentedByAgency": {
+        "label": "Is the customer represented by an agency? "
+      },
+      "agencyName": {
+        "label": "Agency Name",
+        "placeholder": "Enter Agency Name",
+        "requiredValidationError": "This field is required"
+      },
+      "salesforceOpportunityId": {
+        "label": "Salesforce Opportunity ID",
+        "placeholder": "Enter ID",
+        "requiredValidationError": "This field is required"
+      },
+      "salesforceOpportunityName": {
+        "label": "Salesforce Opportunity Name",
+        "placeholder": "Enter Name",
+        "requiredValidationError": "This field is required"
+      },
+      "salesforceOpportunityLink": {
+        "label": "Salesforce Opportunity Link",
+        "placeholder": "Enter Link",
+        "requiredValidationError": "This field is required"
+      },
+      "billingSystemReferenceId": {
+        "label": "Billing System Reference ID",
+        "placeholder": "Enter ID",
+        "requiredValidationError": "This field is required"
+      },
+      "ioNumber": {
+        "label": "IO Number",
+        "placeholder": "Enter IO Number",
+        "requiredValidationError": "This field is required"
+      },
+      "opportunityCloseDate": {
+        "label": "Opportunity Close Date",
+        "placeholder": "Select Opportunity Close Date",
+        "requiredValidationError": "This field is required"
+      },
+      "retainerContract": {
+        "label": "Retainer Contract?",
+        "placeholder": "Enter Retainer Contract",
+        "requiredValidationError": "This field is required"
+      },
+      "ioFileId": {
+        "label": "Upload IO File",
+        "requiredValidationError": "This field is required"
+      },
+      "bookedRevenue": {
+        "label": "Booked Revenue",
+        "placeholder": "Enter Booked Revenue",
+        "requiredValidationError": "This is not a valid input number.",
+        "patternValidationError": "Negative values are not allowed."
+      },
+      "campaignGoals": {
+        "label": "Campaign Goals",
+        "placeholder": "Select Goals",
+        "requiredValidationError": "This field is required"
+      },
+      "campaignDuration": {
+        "label": "Campaign Duration (In days)",
+        "placeholder": "Campaign Duration",
+        "requiredValidationError": "This field is required"
+      },
+      "targetStartDate": {
+        "label": "Target Start Date",
+        "placeholder": "Select Target Start Date",
+        "requiredValidationError": "This field is required"
+      },
+      "targetEndDate": {
+        "label": "Target End Date",
+        "placeholder": "Select Target End Date",
+        "requiredValidationError": "This field is required"
+      },
+      "actualStartDate": {
+        "label": "Actual Start Date"
+      },
+      "actualEndDate": {
+        "label": "Actual End Date"
+      },
+      "createdAt": {
+        "label": "Created On"
+      },
+      "createdBy": {
+        "label": "Created By"
+      },
+      "updatedAt": {
+        "label": "Updated On"
+      },
+      "updatedBy": {
+        "label": "Updated By"
+      },
+      "invoicingTerm": {
+        "label": "Invoicing Term",
+        "placeholder": "Select Term",
+        "requiredValidationError": "This field is required"
+      },
+      "paymentTerm": {
+        "label": "Payment Term",
+        "placeholder": "Select Term",
+        "requiredValidationError": "This field is required"
+      },
+      "budget": {
+        "label": "Budget (In Dollars)",
+        "placeholder": "Enter Budget",
+        "requiredValidationError": "This field is required"
+      },
+      "deliveryContact": {
+        "label": "Delivery Contact",
+        "placeholder": "Enter Contact Name",
+        "requiredValidationError": "This field is required"
+      },
+      "deliveryMethod": {
+        "label": "Delivery Method",
+        "placeholder": "Select Delivery Method",
+        "requiredValidationError": "This field is required"
+      },
+      "deliveryDays": {
+        "label": "Delivery Day(s)",
+        "placeholder": "Select Delivery Day(s)",
+        "requiredValidationError": "This field is required"
+      },
+      "customerSuccessManagerId": {
+        "label": "Customer Success Manager (CSM)",
+        "placeholder": "Select CSM",
+        "requiredValidationError": "This field is required"
+      },
+      "customerSuccessRepId": {
+        "label": "Customer Success Rep (CSR)",
+        "placeholder": "Select CSR",
+        "requiredValidationError": "This field is required"
+      },
+      "operationsManagerId": {
+        "label": "Operations Manager",
+        "placeholder": "Select Operations Manager",
+        "requiredValidationError": "This field is required"
+      },
+      "qaManagerId": {
+        "label": "QA Manager",
+        "placeholder": "Select QA Manager",
+        "requiredValidationError": "This field is required"
+      },
+      "qaTeamLeaderId": {
+        "label": "QA Team Leader",
+        "placeholder": "Select QA Team Leader",
+        "requiredValidationError": "This field is required"
+      },
+      "deliveryManagerId": {
+        "label": "Delivery Manager",
+        "placeholder": "Select Delivery Manager",
+        "requiredValidationError": "This field is required"
+      },
+      "misTeamLeaderId": {
+        "label": "MIS Team Leader",
+        "placeholder": "Select MIS Team Leader",
+        "requiredValidationError": "This field is required"
+      },
+      "ccdTeamLeaderId": {
+        "label": "CCD Team Leader",
+        "placeholder": "Select CCD Team Leader",
+        "requiredValidationError": "This field is required"
+      },
+      "assignedTo": {
+        "label": "Assigned To",
+        "placeholder": "Select Assigned To",
+        "requiredValidationError": "This field is required"
+      },
+      "status": {
+        "label": "Status"
+      },
+      "lineItemsCount": {
+        "label": "Line Items"
+      },
+      "lineItemsDeliveryPercentage": {
+        "label": "Line Items Delivered (%)"
+      },
+      "launchCompletionPercentage": {
+        "label": "Launch Completion (%)"
+      }
+    },
+    "editLineItem": {
+      "edit": "Edit Line Item"
+    },
+    "createLineItem": {
+      "create": "Create Line Item",
+      "formHeader": "New Line Item",
+      "formSubHeader": "Add Line Item Details",
+      "goals": "Goals",
+      "basicDetails": "Basic Details",
+      "deliveryAndPacing": "Delivery & Pacing",
+      "delivery": "Delivery",
+      "contact": "Contact",
+      "targeting": "Targeting",
+      "collaborators": "Collaborators",
+      "clientDetails": "Client Details",
+      "campaignDetails": "Campaign Details",
+      "assets": "Assets",
+      "pacingHeader": "Pacing",
+      "customQuestionsDetails": "Custom Questions",
+      "firmographics": "Firmographics",
+      "technographics": "Technographics",
+      "predefinedRange": "Predefined range",
+      "customRange": "Custom range",
+      "isCompanySizeEmployeeCountCustom": {
+        "label": "Company Size(s) (Employee Count)"
+      },
+      "isCompanySizeRevenueCustom": {
+        "label": "Company Size(s) (Revenue)"
+      },
+      "employeeCountCustomRange": {
+        "label": "Employee Count - Custom Range"
+      },
+      "revenueCustomRange": {
+        "label": "Revenue (In Million Dollars) - Custom Range"
+      },
+      "marketerCode": {
+        "label": "Marketer",
+        "placeholder": "Select Marketer",
+        "requiredValidationError": "This field is required"
+      },
+      "tenantCode": {
+        "label": "Marketer ID",
+        "placeholder": "ORG123",
+        "requiredValidationError": "This field is required"
+      },
+      "marketer": {
+        "label": "Marketer"
+      },
+      "actualStartDate": {
+        "label": "Actual Start Date"
+      },
+      "actualEndDate": {
+        "label": "Actual End Date"
+      },
+      "createdAt": {
+        "label": "Created On"
+      },
+      "createdBy": {
+        "label": "Created By"
+      },
+      "updatedAt": {
+        "label": "Updated On"
+      },
+      "updatedBy": {
+        "label": "Updated By"
+      },
+      "supplier": {
+        "label": "Supplier"
+      },
+      "supplierCode": {
+        "label": "Supplier Code"
+      },
+      "agencyName": {
+        "label": "Agency Name",
+        "placeholder": "Enter Agency Name",
+        "requiredValidationError": "This field is required"
+      },
+      "marketerDetails": "Marketer Details",
+      "supplierDetails": "Supplier Details",
+      "additionalInstruction": "Additional Instructions",
+      "geography": "Geography",
+      "intent": "Intent",
+      "clientName": {
+        "label": "Client Name",
+        "placeholder": "Select Client Name",
+        "requiredValidationError": "This field is required"
+      },
+      "clientIdNumber": {
+        "label": "Client ID",
+        "placeholder": "CLI12345",
+        "requiredValidationError": "This field is required"
+      },
+      "campaignId": {
+        "label": "Campaign Name",
+        "placeholder": "Select Campaign Name",
+        "requiredValidationError": "This field is required"
+      },
+      "campaignName": {
+        "label": "Campaign Name",
+        "placeholder": "Select Campaign Name",
+        "requiredValidationError": "This field is required"
+      },
+      "campaignIdNumber": {
+        "label": "Campaign ID",
+        "placeholder": "CAMP12345",
+        "requiredValidationError": "This field is required"
+      },
+
+      "name": {
+        "label": "Line Item Name",
+        "placeholder": "Enter Line Item Name",
+        "requiredValidationError": "This field is required",
+        "patternValidationError": "Only - and _ special characters are allowed."
+      },
+      "id": {
+        "label": "Line Item ID",
+        "placeholder": "LI12345",
+        "requiredValidationError": "This field is required"
+      },
+      "lineItemId": {
+        "label": "Line Item ID"
+      },
+      "poNumber": {
+        "label": "PO Number",
+        "placeholder": "Enter PO Number",
+        "requiredValidationError": "This field is required"
+      },
+      "needLandingPageBuilt": {
+        "label": "Need Landing Page Built?",
+        "requiredValidationError": "This field is required"
+      },
+      "proofLinks": {
+        "label": "Proof Link(s)",
+        "placeholder": "Enter Proof Link(s)",
+        "requiredValidationError": "This field is required"
+      },
+      "product": {
+        "label": "Product",
+        "placeholder": "Select Product",
+        "requiredValidationError": "This field is required"
+      },
+      "doubleOptIn": {
+        "label": "Double Opt-In?",
+        "requiredValidationError": "This field is required"
+      },
+      "targetLeadGoal": {
+        "label": "Target Lead Goal",
+        "placeholder": "Enter Target Lead Goal",
+        "requiredValidationError": "This is not a valid input number.",
+        "patternValidationError": "Negative values are not allowed."
+      },
+      "isValueAddLineItem": {
+        "label": "Is Value Add Lineitem?",
+        "requiredValidationError": "This field is required"
+      },
+      "targetCostPerLead": {
+        "label": "Target Cost Per Lead",
+        "placeholder": "Enter Target Cost Per Lead",
+        "requiredValidationError": "This is not a valid input number.",
+        "patternValidationError": "Negative values are not allowed."
+      },
+      "lineItemTargetStartDate": {
+        "label": "Line Item Target Start Date",
+        "placeholder": "Select Line Item Target Start Date",
+        "requiredValidationError": "This field is required"
+      },
+      "lineItemTargetEndDate": {
+        "label": "Line Item Target End Date",
+        "placeholder": "Select Line Item Target End Date",
+        "requiredValidationError": "This field is required"
+      },
+      "leadCapPerDomain": {
+        "label": "Lead Cap per Domain",
+        "placeholder": "Enter Lead Cap Per Domain",
+        "patternValidationError": "Negative values are not allowed."
+      },
+      "additionalInstructions": {
+        "label": "Additional Instructions",
+        "placeholder": "Enter Additional Instructions"
+      },
+      "targetDeliveryStartDate": {
+        "label": "Target Delivery Start Date",
+        "placeholder": "Select Target Delivery Start Date",
+        "requiredValidationError": "This field is required"
+      },
+      "deliveryMethod": {
+        "label": "Delivery Method",
+        "placeholder": "Select Delivery Method",
+        "requiredValidationError": "This field is required"
+      },
+      "integrateConverterId": {
+        "label": "Integrate/Converter ID",
+        "placeholder": "Enter Integrate/Converter ID",
+        "requiredValidationError": "This field is required"
+      },
+      "leadDeliveryTemplateFileIncluded": {
+        "label": "Lead Delivery Template File Included?",
+        "requiredValidationError": "This field is required"
+      },
+      "deliveryTemplate": {
+        "label": "Delivery Template",
+        "requiredValidationError": "This field is required"
+      },
+      "deliveryDays": {
+        "label": "Delivery Day(s)",
+        "placeholder": " Select Delivery Day(s)",
+        "requiredValidationError": "This field is required"
+      },
+      "pacing": {
+        "label": "Pacing",
+        "placeholder": "Select Pacing",
+        "requiredValidationError": "This field is required"
+      },
+      "pacingChartLink": {
+        "label": "Pacing Chart Link",
+        "placeholder": "Enter Pacing Chart Link",
+        "requiredValidationError": "This field is required"
+      },
+      "hasCustomQuestions": {
+        "label": "Custom Questions? "
+      },
+      "customQuestionInstructions": {
+        "label": "Custom Question Instructions",
+        "placeholder": "Enter Custom Question Instructions"
+      },
+      "customQuestions": {
+        "label": "Custom Questions",
+        "placeholder": "Enter Custom Questions",
+        "requiredValidationError": "This field is required"
+      },
+      "question": {
+        "label": "Question",
+        "placeholder": "Enter Question",
+        "requiredValidationError": "This field is required"
+      },
+      "acceptedAnswer": {
+        "label": "Accepted Answer",
+        "placeholder": "Enter Accepted Answer",
+        "requiredValidationError": "This field is required"
+      },
+      "rejectedAnswer": {
+        "label": "Rejected Answer",
+        "placeholder": "Enter Rejected Answer",
+        "requiredValidationError": "This field is required"
+      },
+      "jobFunctions": {
+        "label": "Job Function(s)",
+        "placeholder": "Select Job Function(s)"
+      },
+      "jobLevels": {
+        "label": "Job Level(s)",
+        "placeholder": "Select Job Level(s)"
+      },
+      "hasJobTitles": {
+        "label": "Would you like to add any job title?"
+      },
+      "isJobTitleListIncluded": {
+        "label": "Job Title List Included?"
+      },
+      "jobTitles": {
+        "label": "Enter job title",
+        "placeholder": "Enter the job title",
+        "requiredValidationError": "This field is required"
+      },
+      "jobTitleFileDetails": {
+        "label": "Job Title List Upload",
+        "requiredValidationError": "This field is required"
+      },
+      "industries": {
+        "label": "Industry(s)",
+        "placeholder": "Select Industry(s)"
+      },
+      "companySizeCount": {
+        "label": "Employee Count - Predefined Range",
+        "placeholder": "Select Employee Count - Predefined Range"
+      },
+      "companySizeRevenue": {
+        "label": "Revenue - Predefined Range",
+        "placeholder": "Select Revenue - Predefined Range"
+      },
+      "companySizeRevenueCustomRangeMin": {
+        "label": "Company Size (Revenue in Million Dollars) - Custom Range (Min)",
+        "placeholder": "Min"
+      },
+      "companySizeRevenueCustomRangeMax": {
+        "label": "Company Size (Revenue in Million Dollars) - Custom Range (Max)",
+        "placeholder": "Max"
+      },
+      "companySizeEmployeeCountCustomRangeMin": {
+        "label": "Employee Count - Custom Range (Min)",
+        "placeholder": "Min"
+      },
+      "companySizeEmployeeCountCustomRangeMax": {
+        "label": "Employee Count - Custom Range (Max)",
+        "placeholder": "Max"
+      },
+      "isTalIncluded": {
+        "label": "Target Account List (TAL) Included?",
+        "requiredValidationError": "This field is required"
+      },
+      "talFileDetails": {
+        "label": "Target Account List (TAL) Upload",
+        "requiredValidationError": "This field is required"
+      },
+      "isSuppressionListIncluded": {
+        "label": "Suppression List Included?",
+        "requiredValidationError": "This field is required"
+      },
+      "suppressionFileDetails": {
+        "label": "Suppression List Upload",
+        "requiredValidationError": "This field is required"
+      },
+      "regions": {
+        "label": "Geography by Region",
+        "placeholder": "Select Geography by Region",
+        "requiredValidationError": "This field is required"
+      },
+      "countries": {
+        "label": "Geography by Country",
+        "placeholder": "Select Geography by Country",
+        "requiredValidationError": "This field is required"
+      },
+      "isIntentTargeting": {
+        "label": "Intent Targeting?",
+        "requiredValidationError": "This field is required"
+      },
+      "intentKeywordFileDetails": {
+        "label": "Intent Keywords List",
+        "requiredValidationError": "This field is required"
+      },
+      "isTechnographicTargeting": {
+        "label": "Technographic Targeting?",
+        "requiredValidationError": "This field is required"
+      },
+      "technologyFileDetails": {
+        "label": "Technology List Upload",
+        "requiredValidationError": "This field is required"
+      },
+      "customerSuccessManager": {
+        "label": "Customer Success Manager (CSM)",
+        "placeholder": "Enter CSM",
+        "requiredValidationError": "This field is required"
+      },
+      "customerSuccessRep": {
+        "label": "Customer Success Rep (CSR)",
+        "placeholder": "Enter CSR",
+        "requiredValidationError": "This field is required"
+      },
+      "operationsManager": {
+        "label": "Operations Manager",
+        "placeholder": "Enter Operations Manager",
+        "requiredValidationError": "This field is required"
+      },
+      "qaManager": {
+        "label": "QA Manager",
+        "placeholder": "Enter QA Manager",
+        "requiredValidationError": "This field is required"
+      },
+      "qaTeamLead": {
+        "label": "QA Team Leader",
+        "placeholder": "Enter QA Team Leader",
+        "requiredValidationError": "This field is required"
+      },
+      "deliveryManager": {
+        "label": "Delivery Manager",
+        "placeholder": "Enter Delivery Manager",
+        "requiredValidationError": "This field is required"
+      },
+      "misTeamLeader": {
+        "label": "MIS Team Leader",
+        "placeholder": "Enter MIS Team Leader",
+        "requiredValidationError": "This field is required"
+      },
+      "ccdTeamLeader": {
+        "label": "CCD Team Leader",
+        "placeholder": "Enter CCD Team Leader",
+        "requiredValidationError": "This field is required"
+      },
+      "assignedTo": {
+        "label": "Assigned To",
+        "placeholder": "Select Assigned To",
+        "requiredValidationError": "This field is required"
+      },
+      "status": {
+        "label": "Status"
+      },
+      "fields": {
+        "name": {
+          "label": "Line Item Name",
+          "placeholder": "Enter Name",
+          "requiredValidationError": "This field is required",
+          "patternValidationError": "Invalid line item name"
+        },
+        "billableLeads": {
+          "label": "Billable Leads",
+          "placeholder": "Enter Number",
+          "requiredValidationError": "This field is required"
+        },
+        "valueAddLeads": {
+          "label": "Value Add Leads",
+          "placeholder": "Enter Number",
+          "requiredValidationError": "This field is required"
+        },
+        "totalLeads": {
+          "label": "Total Leads",
+          "placeholder": ""
+        },
+        "pacing": {
+          "label": "Pacing",
+          "placeholder": "Select Pacing",
+          "requiredValidationError": "This field is required"
+        },
+        "product": {
+          "label": "Product",
+          "placeholder": "Select Product",
+          "requiredValidationError": "This field is required"
+        },
+        "startDate": {
+          "label": "Start Date",
+          "placeholder": "dd-mm-yyyy",
+          "requiredValidationError": "This field is required"
+        },
+        "endDate": {
+          "label": "End Date",
+          "placeholder": "dd-mm-yyyy",
+          "requiredValidationError": "This field is required"
+        },
+        "cpl": {
+          "label": "CPL",
+          "placeholder": "Enter CPL",
+          "requiredValidationError": "This field is required"
+        },
+        "status": {
+          "label": "Status",
+          "placeholder": "Select status",
+          "requiredValidationError": "This field is required"
+        }
+      }
+    },
+    "fieldProperties": {
+      "dzOneFieldName": {
+        "label": "DZ One Field Name (Source)",
+        "placeholder": "",
+        "requiredValidationError": "",
+        "tooltipMessage": ""
+      },
+      "deliveryFieldName": {
+        "label": "Delivery Field Name (Destination)",
+        "placeholder": "",
+        "requiredValidationError": "",
+        "tooltipMessage": ""
+      },
+      "dataType": {
+        "label": "Data Type",
+        "placeholder": "",
+        "requiredValidationError": "",
+        "tooltipMessage": ""
+      },
+      "minimumCharacters": {
+        "label": "Minimum Characters",
+        "placeholder": "",
+        "requiredValidationError": "",
+        "tooltipMessage": ""
+      },
+      "maximumCharacters": {
+        "label": "Maximum Characters",
+        "placeholder": "",
+        "requiredValidationError": "",
+        "tooltipMessage": ""
+      },
+      "dataMapper": {
+        "label": "Data Mapper",
+        "placeholder": "",
+        "requiredValidationError": "",
+        "tooltipMessage": ""
+      }
+    }
+  },
+  "fileUpload": {
+    "labels": {
+      "uploading": "Uploading Files..."
+    }
+  }
+}

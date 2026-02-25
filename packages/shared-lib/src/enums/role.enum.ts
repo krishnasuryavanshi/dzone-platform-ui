@@ -1,0 +1,16 @@
+export enum Roles {
+  Admin = 'Admin',
+  User = 'User',
+  Agent = 'agent',
+  CustomerSuccessManager = 'Customer Success Manager',
+  CustomerSuccessRep = 'Customer Success Rep',
+  CCDTeamLeader = 'CCD Team Leader',
+  TeamLeaderCampaignCoordinator = 'Team Leader - Campaign Coordinator',
+  OperationsManager = 'Operations Manager',
+  QAManager = 'QA Manager',
+  DeliveryManager = 'Delivery Manager',
+  CampaignCoordinator = 'Campaign Coordinator',
+  CampaignDeliveryCoordinator = 'Campaign Delivery Coordinator',
+  MISTeamLeader = 'MIS Team Leader',
+  QATeamLeader = 'QA Team Leader',
+}

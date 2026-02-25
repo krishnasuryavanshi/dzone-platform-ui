@@ -1,0 +1,26 @@
+{
+  "name": "dzone-platform",
+  "private": true,
+  "packageManager": "pnpm@10.6.2",
+  "engines": {
+    "node": ">=22",
+    "pnpm": ">=10"
+  },
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "lint": "turbo lint",
+    "typecheck": "turbo typecheck",
+    "test": "turbo test:unit test:e2e",
+    "test:unit": "turbo test:unit",
+    "test:e2e": "turbo test:e2e",
+    "test:unit:skip": "SKIP_UNIT_TESTS=true turbo test:unit",
+    "test:e2e:skip": "SKIP_E2E_TESTS=true turbo test:e2e",
+    "storybook": "turbo storybook --filter=@dzone/storybook",
+    "clean": "turbo clean && rm -rf node_modules"
+  },
+  "devDependencies": {
+    "turbo": "^2.5.0",
+    "typescript": "^5.9.0-beta"
+  }
+}

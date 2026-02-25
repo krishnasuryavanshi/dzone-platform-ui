@@ -1,0 +1,287 @@
+/* Font: Roboto loaded via <link> in index.html */
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  margin: 0;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--dzone-color-bg-light-blue);
+}
+
+html,
+body,
+body * {
+  font-family: inherit;
+}
+
+.ant-tag {
+  font-family: inherit !important;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-color: transparent;
+}
+
+.show-scroll ::-webkit-scrollbar-thumb,
+.show-scroll::-webkit-scrollbar-thumb {
+  background-color: rgba(50, 49, 49, 0.37);
+}
+
+/* Utility classes */
+.ellipsis-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Link styles */
+a.dz-link,
+.dz-link {
+  color: var(--dzone-color-brand-black);
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.2s;
+  background: none;
+}
+
+a.dz-link:hover,
+.dz-link:hover,
+a.dz-link:focus,
+.dz-link:focus {
+  color: #595959;
+  background: none;
+  text-decoration: underline;
+  text-decoration-color: currentColor;
+}
+
+a.dz-link:visited,
+.dz-link:visited {
+  color: var(--dzone-color-brand-black);
+}
+
+/* Ant Design Typography link overrides */
+.ant-typography.dz-link,
+a.ant-typography.dz-link,
+.ant-typography.dz-link.dz-link,
+a.ant-typography.dz-link.dz-link {
+  color: var(--dzone-color-brand-black);
+}
+
+.ant-typography.dz-link:hover,
+a.ant-typography.dz-link:hover,
+.ant-typography.dz-link:focus,
+a.ant-typography.dz-link:focus,
+.ant-typography.dz-link.dz-link:hover,
+a.ant-typography.dz-link.dz-link:hover,
+.ant-typography.dz-link.dz-link:focus,
+a.ant-typography.dz-link.dz-link:focus {
+  color: #595959;
+  text-decoration: underline;
+  text-decoration-color: currentColor;
+}
+
+.ant-typography.dz-link:visited,
+.ant-typography.dz-link.dz-link:visited {
+  color: var(--dzone-color-brand-black);
+}
+
+/* Action button */
+.dz-btn-action {
+  filter: drop-shadow(0px 0px 0px rgba(42, 42, 42, 0.16));
+  background-color: #ffffff;
+  color: var(--dzone-color-brand-black);
+  padding: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+}
+
+.ant-btn.ant-btn-default.dz-btn-action-1 {
+  background-color: var(--dzone-color-white);
+  padding: 0 0.5rem;
+  border: 1px solid var(--dzone-color-brand-btn-border);
+  border-radius: 0.3125rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.25rem;
+  color: var(--dzone-color-brand-black);
+}
+
+.ant-btn.ant-btn-default.dz-btn-action-1:hover {
+  background-color: #e5e6eb;
+  color: var(--dzone-color-brand-black);
+  border-color: var(--dzone-color-brand-black);
+}
+
+/* Notification */
+.dz-notification-alert.dz-notification.dz-alert.dz-notification-message.ant-notification-notice {
+  top: 5rem;
+  width: 30rem;
+  padding: 0.75rem 1rem;
+  background-color: var(--dz-notification-alert-background-color);
+  border: 2px solid var(--dz-notification-alert-border-color);
+  border-radius: 8px;
+}
+
+.dz-notification-alert .ant-notification-notice-content {
+  min-height: 2rem;
+  padding-right: 2rem;
+}
+
+.dz-notification-alert .ant-notification-notice-message {
+  padding: 0.25rem 0.75rem;
+  margin-bottom: 0;
+}
+
+.dz-notification-alert .ant-notification-notice-description {
+  margin-inline-start: 3rem;
+}
+
+.dz-notification-alert .ant-notification-notice-icon {
+  height: 100%;
+  top: calc(50% - 1rem);
+}
+
+.dz-notification-alert.has-header .ant-notification-notice-message {
+  font-weight: 600;
+}
+
+.dz-notification-alert .dz-notification-custom-icon {
+  font-size: 2rem;
+}
+
+.dz-notification-alert .dz-notification-custom-icon.success {
+  color: var(--dzone-notification-success-icon);
+}
+
+.dz-notification-alert .dz-notification-custom-icon.error {
+  color: var(--dzone-notification-error-icon);
+}
+
+.dz-notification-alert.error {
+  --dz-notification-alert-background-color: var(--dzone-notification-error-bg);
+  --dz-notification-alert-border-color: var(--dzone-notification-error-border);
+}
+
+.dz-notification-alert.success {
+  --dz-notification-alert-background-color: var(--dzone-notification-success-bg);
+  --dz-notification-alert-border-color: var(--dzone-notification-success-border);
+}
+
+.dz-notification-alert .ant-notification-notice-close {
+  color: #000;
+}
+
+/* Global checkbox styles */
+.ant-checkbox-wrapper:hover .ant-checkbox-inner {
+  border-color: var(--dzone-color-brand-black) !important;
+}
+
+.ant-checkbox:hover .ant-checkbox-inner {
+  border-color: var(--dzone-color-brand-black) !important;
+}
+
+.ant-checkbox-input:focus + .ant-checkbox-inner {
+  border-color: var(--dzone-color-brand-black) !important;
+  box-shadow: 0 0 0 2px rgba(50, 49, 49, 0.1) !important;
+}
+
+/* Dark theme checkbox */
+.dz-checkbox-dark .ant-checkbox-checked .ant-checkbox-inner {
+  background-color: var(--dzone-color-brand-black);
+  border-color: var(--dzone-color-brand-black);
+}
+
+.dz-checkbox-dark .ant-checkbox-checked:hover .ant-checkbox-inner {
+  background-color: var(--dzone-color-brand-black);
+  border-color: var(--dzone-color-brand-black);
+}
+
+.dz-checkbox-dark .ant-checkbox-wrapper:hover .ant-checkbox-checked .ant-checkbox-inner {
+  background-color: var(--dzone-color-brand-black);
+  border-color: var(--dzone-color-brand-black);
+}
+
+.dz-checkbox-dark .ant-checkbox-indeterminate .ant-checkbox-inner {
+  background-color: var(--dzone-color-brand-black);
+  border-color: var(--dzone-color-brand-black);
+}
+
+.dz-checkbox-dark .ant-checkbox-indeterminate .ant-checkbox-inner::after {
+  background-color: #ffffff;
+}
+
+.dz-checkbox-dark .ant-checkbox-wrapper .ant-checkbox-input:focus + .ant-checkbox-inner {
+  border-color: var(--dzone-color-brand-black);
+}
+
+/* Dark theme calendar/date picker */
+.dz-calendar-dark .ant-picker-cell-in-view.ant-picker-cell-selected .ant-picker-cell-inner {
+  background-color: var(--dzone-color-brand-black);
+  color: #ffffff;
+}
+
+.dz-calendar-dark .ant-picker-cell-in-view.ant-picker-cell-range-start .ant-picker-cell-inner,
+.dz-calendar-dark .ant-picker-cell-in-view.ant-picker-cell-range-end .ant-picker-cell-inner {
+  background-color: var(--dzone-color-brand-black);
+  color: #ffffff;
+}
+
+.dz-calendar-dark .ant-picker-cell-in-view.ant-picker-cell-range-start:hover .ant-picker-cell-inner,
+.dz-calendar-dark .ant-picker-cell-in-view.ant-picker-cell-range-end:hover .ant-picker-cell-inner {
+  background-color: var(--dzone-color-brand-black);
+  color: #ffffff;
+}
+
+.dz-calendar-dark .ant-picker-cell-in-view.ant-picker-cell-today .ant-picker-cell-inner::before {
+  border: 1px solid var(--dzone-color-brand-black);
+}
+
+.dz-calendar-dark .ant-picker-cell-in-view.ant-picker-cell-range-hover-start .ant-picker-cell-inner,
+.dz-calendar-dark .ant-picker-cell-in-view.ant-picker-cell-range-hover-end .ant-picker-cell-inner,
+.dz-calendar-dark .ant-picker-cell-in-view.ant-picker-cell-range-hover .ant-picker-cell-inner {
+  background-color: rgba(50, 49, 49, 0.1);
+}
+
+/* Popup submenu (when sider is collapsed) */
+.ant-menu-submenu-popup .ant-menu-sub.ant-menu-vertical {
+  padding: 0.25rem;
+}
+
+.ant-menu-submenu-popup .ant-menu-sub.ant-menu-vertical .ant-menu-item {
+  color: #000;
+  padding-inline: 0.5rem;
+}
+
+.ant-menu-submenu-popup .ant-menu-sub.ant-menu-vertical .ant-menu-item .ant-menu-item-icon {
+  display: none;
+}
+
+.ant-menu-submenu-popup .ant-menu-sub.ant-menu-vertical .ant-menu-item .ant-menu-title-content {
+  margin-inline-start: 0;
+}
+
+.ant-menu-submenu-popup .ant-menu-sub.ant-menu-vertical .ant-menu-item-selected,
+.ant-menu-submenu-popup .ant-menu-sub.ant-menu-vertical .ant-menu-item-active {
+  background-color: #eaeaea;
+}

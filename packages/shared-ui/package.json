@@ -1,0 +1,31 @@
+{
+  "name": "@dzone/shared-ui",
+  "version": "0.0.1",
+  "private": true,
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint src/",
+    "typecheck": "tsc --noEmit",
+    "test:unit": "vitest run",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@dzone/shared-store": "workspace:*",
+    "@dzone/shared-styles": "workspace:*"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "antd": ">=5.0.0",
+    "@ant-design/icons": ">=5.0.0",
+    "recharts": ">=2.0.0"
+  },
+  "devDependencies": {
+    "react": "^19.1.0",
+    "@types/react": "^19.1.6",
+    "antd": "^5.24.7",
+    "@ant-design/icons": "^5.6.1",
+    "recharts": "^2.14.1"
+  }
+}

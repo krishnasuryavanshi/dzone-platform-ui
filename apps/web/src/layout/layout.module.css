@@ -1,0 +1,121 @@
+.root {
+  min-height: calc(100vh - 1rem);
+}
+
+.sider {
+  height: calc(100vh - 1rem);
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  margin-right: 0.5rem;
+}
+
+.menuWrapper {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: calc(100% - 3.5rem);
+}
+
+.panelDesktop {
+  margin-left: 0;
+}
+
+.panelMobile {
+  margin-left: 0;
+}
+
+.content {
+  margin-top: var(--dzone-sider-margin, 0.5rem);
+  padding: var(--dzone-spacing-2xl);
+  overflow-y: auto;
+}
+
+.mobileOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 100;
+}
+
+/* ── Navigation menu styling (matches old implementation) ── */
+
+/* Menu items — font weight + padding + spacing */
+.sider :global(.ant-menu .ant-menu-item) {
+  display: flex;
+  padding-left: 1rem !important;
+  font-weight: 500;
+  margin-bottom: 0.125rem;
+}
+
+/* Icon vertical alignment */
+.sider :global(.ant-menu .ant-menu-item .ant-menu-item-icon) {
+  padding-top: 0.25rem;
+}
+
+/* Selected/active item — 4px white left border indicator */
+.sider :global(.ant-menu .ant-menu-item-selected)::before,
+.sider :global(.ant-menu .ant-menu-item-active)::before {
+  content: '';
+  background-color: #fff;
+  height: 100%;
+  width: 0.25rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Submenu title padding */
+.sider :global(.ant-menu .ant-menu-submenu .ant-menu-submenu-title) {
+  padding-left: 1rem !important;
+  font-weight: 500;
+}
+
+/* Submenu icon alignment */
+.sider :global(.ant-menu .ant-menu-submenu .ant-menu-submenu-title .ant-menu-item-icon) {
+  padding-top: 0.25rem;
+}
+
+/* First child in submenu — small top margin */
+.sider :global(.ant-menu .ant-menu-submenu .ant-menu-item:first-child) {
+  margin-top: 0.125rem;
+}
+
+/* Submenu items do NOT show the left border indicator */
+.sider :global(.ant-menu .ant-menu-sub .ant-menu-item-selected)::before,
+.sider :global(.ant-menu .ant-menu-sub .ant-menu-item-active)::before {
+  height: 0;
+  width: 0;
+}
+
+/* Parent submenu when selected/active — white left border on the title */
+.sider :global(.ant-menu .ant-menu-submenu-selected > .ant-menu-submenu-title)::before,
+.sider :global(.ant-menu .ant-menu-submenu-active > .ant-menu-submenu-title)::before {
+  content: '';
+  background-color: #fff;
+  height: 100%;
+  width: 0.25rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Parent submenu title background + text color when selected */
+.sider :global(.ant-menu .ant-menu-submenu-selected > .ant-menu-submenu-title),
+.sider :global(.ant-menu .ant-menu-submenu-active > .ant-menu-submenu-title) {
+  background-color: #49494A;
+  color: #fff !important;
+}
+
+/* Submenu title text — always white on dark sider */
+.sider :global(.ant-menu .ant-menu-submenu .ant-menu-submenu-title),
+.sider :global(.ant-menu .ant-menu-submenu-selected .ant-menu-submenu-title),
+.sider :global(.ant-menu .ant-menu-submenu-open .ant-menu-submenu-title) {
+  color: #fff !important;
+}
+
+/* Submenu expand arrow — always white */
+.sider :global(.ant-menu .ant-menu-submenu-arrow),
+.sider :global(.ant-menu .ant-menu-submenu-selected .ant-menu-submenu-arrow),
+.sider :global(.ant-menu .ant-menu-submenu-open .ant-menu-submenu-arrow) {
+  color: #fff !important;
+}
