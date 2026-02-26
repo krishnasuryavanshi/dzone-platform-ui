@@ -89,6 +89,16 @@ export const lightTheme: ThemeConfig = {
       rowExpandedBg: 'rgb(239, 244, 253)',
       colorSplit: 'rgba(0, 0, 0, 0)',
       margin: 16,
+      cellPaddingBlock: 0,
+      cellPaddingInline: 16,
+      cellPaddingBlockMD: 0,
+      cellPaddingInlineMD: 16,
+      cellPaddingBlockSM: 0,
+      cellPaddingInlineSM: 16,
+    },
+    Input: {
+      controlHeight: 48,
+      controlHeightLG: 48,
     },
     InputNumber: {
       controlHeight: 48,

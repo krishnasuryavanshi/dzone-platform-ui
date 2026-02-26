@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
-import { Flex, Modal, Typography, Pagination, Button, notification } from 'antd';
+import { Flex, Modal, Typography, notification } from 'antd';
+import { SimplePagination, GradientButton } from '@dzone/shared-ui';
 import { ExclamationCircleOutlined } from '@ant-design/icons';
 import { useNavigate } from 'react-router';
 import { useTranslation } from 'react-i18next';
@@ -126,9 +127,9 @@ export const UserContainer = () => {
           {orgName ? ` - ${orgName}` : ''}
         </Text>
         <Hideable show={canCreate}>
-          <Button type="primary" onClick={() => navigate('/ums/users/create')}>
+          <GradientButton onClick={() => navigate('/ums/users/create')}>
             {t('Invite new user')}
-          </Button>
+          </GradientButton>
         </Hideable>
       </Flex>
       <Flex vertical style={{ flex: 1 }}>
@@ -148,16 +149,12 @@ export const UserContainer = () => {
         />
       </Flex>
       <Hideable show={totalRecords > 0}>
-        <Flex justify="end">
-          <Pagination
-            current={pageNo}
-            pageSize={pageSize}
-            total={totalRecords}
-            onChange={handlePageChange}
-            showSizeChanger
-            showTotal={(total) => `Total ${total} items`}
-          />
-        </Flex>
+        <SimplePagination
+          current={pageNo}
+          pageSize={pageSize}
+          total={totalRecords}
+          onChange={handlePageChange}
+        />
       </Hideable>
       {contextHolder}
     </Flex>

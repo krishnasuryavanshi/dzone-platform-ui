@@ -116,10 +116,10 @@ export const ActionItem: FC<IActionItemProps> = ({ action, isLast }) => {
               <LoadingOutlined />
             ) : (
               <Switch
+                className={`action-item-switch ${isChecked ? 'checked' : ''}`}
                 checked={isChecked}
                 onChange={onToggle}
                 disabled={(!isEditAllowed && isEditing) || !isParentChecked}
-                size="small"
               />
             )}
             <span>{action.name || action.value}</span>
@@ -138,7 +138,7 @@ export const ActionItem: FC<IActionItemProps> = ({ action, isLast }) => {
           </Hideable>
         </Flex>
         <Hideable show={!isLast}>
-          <Divider style={{ margin: 0 }} />
+          <Divider style={{ margin: 0, borderColor: '#d9d9d9' }} />
         </Hideable>
       </Flex>
       <PermissionDrawer

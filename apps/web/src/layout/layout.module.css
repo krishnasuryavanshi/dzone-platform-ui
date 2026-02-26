@@ -1,5 +1,6 @@
 .root {
-  min-height: calc(100vh - 1rem);
+  height: 100vh;
+  overflow: hidden;
 }
 
 .sider {
@@ -18,10 +19,12 @@
 
 .panelDesktop {
   margin-left: 0;
+  overflow: hidden;
 }
 
 .panelMobile {
   margin-left: 0;
+  overflow: hidden;
 }
 
 .content {
@@ -52,6 +55,17 @@
   padding-top: 0.25rem;
 }
 
+/* Icon to text spacing */
+.sider :global(.ant-menu .ant-menu-item .ant-menu-title-content),
+.sider :global(.ant-menu .ant-menu-submenu-title .ant-menu-title-content) {
+  margin-inline-start: 0.625rem;
+}
+
+/* Submenu child items — align text with parent menu text (no icon) */
+.sider :global(.ant-menu .ant-menu-sub .ant-menu-item) {
+  padding-left: 2.25rem !important;
+}
+
 /* Selected/active item — 4px white left border indicator */
 .sider :global(.ant-menu .ant-menu-item-selected)::before,
 .sider :global(.ant-menu .ant-menu-item-active)::before {
@@ -71,7 +85,10 @@
 }
 
 /* Submenu icon alignment */
-.sider :global(.ant-menu .ant-menu-submenu .ant-menu-submenu-title .ant-menu-item-icon) {
+.sider
+  :global(
+    .ant-menu .ant-menu-submenu .ant-menu-submenu-title .ant-menu-item-icon
+  ) {
   padding-top: 0.25rem;
 }
 
@@ -88,8 +105,14 @@
 }
 
 /* Parent submenu when selected/active — white left border on the title */
-.sider :global(.ant-menu .ant-menu-submenu-selected > .ant-menu-submenu-title)::before,
-.sider :global(.ant-menu .ant-menu-submenu-active > .ant-menu-submenu-title)::before {
+.sider
+  :global(
+    .ant-menu .ant-menu-submenu-selected > .ant-menu-submenu-title
+  )::before,
+.sider
+  :global(
+    .ant-menu .ant-menu-submenu-active > .ant-menu-submenu-title
+  )::before {
   content: '';
   background-color: #fff;
   height: 100%;
@@ -102,7 +125,7 @@
 /* Parent submenu title background + text color when selected */
 .sider :global(.ant-menu .ant-menu-submenu-selected > .ant-menu-submenu-title),
 .sider :global(.ant-menu .ant-menu-submenu-active > .ant-menu-submenu-title) {
-  background-color: #49494A;
+  background-color: #49494a;
   color: #fff !important;
 }
 

@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect, useCallback } from 'react';
-import { Flex, Modal, Typography, Pagination, notification } from 'antd';
+import { Flex, Modal, Typography, notification } from 'antd';
+import { SimplePagination } from '@dzone/shared-ui';
 import { ExclamationCircleOutlined } from '@ant-design/icons';
 import { useQueryState } from '@dzone/shared-lib';
 import { Hideable } from '@dzone/shared-ui';
@@ -143,16 +144,12 @@ export const OrgContainer = () => {
         />
       </Flex>
       <Hideable show={totalRecords > 0}>
-        <Flex justify="end">
-          <Pagination
-            current={pageNo}
-            pageSize={pageSize}
-            total={totalRecords}
-            onChange={handlePageChange}
-            showSizeChanger
-            showTotal={(total) => `Total ${total} items`}
-          />
-        </Flex>
+        <SimplePagination
+          current={pageNo}
+          pageSize={pageSize}
+          total={totalRecords}
+          onChange={handlePageChange}
+        />
       </Hideable>
       {contextHolder}
     </Flex>

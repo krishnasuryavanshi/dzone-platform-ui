@@ -15,6 +15,7 @@ import { usePermissionCheck } from '@dzone/shared-auth';
 import { RoleActionsEnum } from '@dzone/shared-lib';
 import { Hideable } from '@dzone/shared-ui';
 import { useRole, useCreateRole, useUpdateRole } from '../hooks';
+import './role-form.css';
 import {
   useEditStore,
   useModulesStore,
@@ -195,8 +196,8 @@ export default function RoleFormPage() {
   }
 
   return (
-    <Flex vertical gap="1rem" style={{ height: '100%' }}>
-      <Flex justify="space-between" align="center">
+    <Flex vertical gap="1rem" style={{ height: '100%', minHeight: 0 }}>
+      <Flex justify="space-between" align="center" style={{ flexShrink: 0 }}>
         <Flex gap="0.75rem" align="center">
           <ArrowLeftOutlined
             onClick={() => navigate('/ums/roles')}
@@ -208,11 +209,19 @@ export default function RoleFormPage() {
         </Flex>
         <Hideable show={isEditing && canEdit}>
           <Flex gap="0.5rem" align="center">
-            <Text strong>{t('Edit Mode')}</Text>
+            <Text
+              style={{
+                color: '#707070',
+                fontWeight: 600,
+                fontSize: '0.875rem',
+              }}
+            >
+              {t('Edit Mode')}
+            </Text>
             <Switch
+              className={`action-item-switch ${isEditAllowed ? 'checked' : ''}`}
               checked={isEditAllowed}
               onChange={() => setIsEditAllowed(!isEditAllowed)}
-              size="small"
             />
           </Flex>
         </Hideable>
@@ -231,8 +240,10 @@ export default function RoleFormPage() {
         </Form>
       </Flex>
 
-      <Flex justify="end" gap="1rem" style={{ padding: '0 1rem 1rem' }}>
-        <Button onClick={() => navigate('/ums/roles')}>{t('Cancel')}</Button>
+      <Flex justify="end" gap="1rem" style={{ padding: '0 1rem 1rem', flexShrink: 0 }}>
+        <Button onClick={() => navigate('/ums/roles')}>
+          {t('Cancel')}
+        </Button>
         <Hideable show={!isEditing || isEditAllowed}>
           <Button
             type="primary"

@@ -65,12 +65,15 @@ export const BasicDetailsForm: FC<IBasicDetailsFormProps> = ({
   return (
     <>
       <Flex vertical gap="0.75rem">
-        <Text strong>{t('Basic Details')}</Text>
+        <Text style={{ fontWeight: 600, color: '#707070' }}>
+          {t('Basic Details')}
+        </Text>
         <Row gutter={[16, 16]}>
           <Col span={8}>
             <Form.Item
               name="name"
               label={t('Role Name')}
+              className="form-control-item"
               rules={[
                 { required: true, message: t('This field is required') },
                 {
@@ -91,18 +94,28 @@ export const BasicDetailsForm: FC<IBasicDetailsFormProps> = ({
             <Form.Item
               name="description"
               label={t('Description')}
+              className="form-control-item"
               rules={[{ max: 500, message: t('Maximum 500 characters') }]}
             >
               <TextArea
                 placeholder={t('Enter role description')}
                 disabled={isDisabled}
-                autoSize={{ minRows: 1, maxRows: 3 }}
+                autoSize={false}
+                style={{
+                  height: '3rem',
+                  lineHeight: 'normal',
+                  paddingTop: '0.75rem',
+                }}
               />
             </Form.Item>
           </Col>
           <Hideable show={isExisting}>
             <Col span={8}>
-              <Form.Item name="status" label={t('Status')}>
+              <Form.Item
+                name="status"
+                label={t('Status')}
+                className="form-control-item"
+              >
                 <Select
                   disabled={isDisabled}
                   onChange={handleStatusChange}
@@ -117,6 +130,7 @@ export const BasicDetailsForm: FC<IBasicDetailsFormProps> = ({
             <Form.Item
               name="tenantType"
               label={t('Tenant Type')}
+              className="form-control-item"
               rules={[{ required: true, message: t('This field is required') }]}
             >
               <Radio.Group disabled={isDisabled}>

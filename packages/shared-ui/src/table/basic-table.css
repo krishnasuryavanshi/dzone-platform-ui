@@ -1,0 +1,194 @@
+/* Resizable columns */
+.resizable-columns .ant-table-thead > tr > th {
+  position: relative;
+  user-select: none;
+}
+
+.column-resize-handle {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 5px;
+  cursor: col-resize;
+  z-index: 1;
+}
+
+.column-resize-handle::after {
+  content: '';
+  position: absolute;
+  right: 1px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 60%;
+  background: #f0f0f0;
+  transition: all 0.2s;
+}
+
+.column-resize-handle:hover::after {
+  background: #1890ff;
+  width: 2px;
+  right: 1px;
+}
+
+.column-resize-handle.resizing::after {
+  background: #1890ff;
+  width: 2px;
+  right: 1px;
+  height: 80%;
+}
+
+/* Main table styles */
+.dz-table.ant-table-wrapper .ant-table {
+  background-color: #f9fafb;
+}
+
+/* Virtual list scrollbar */
+.dz-table.ant-table-wrapper
+  .ant-table
+  .ant-table-container
+  .rc-virtual-list.ant-table-tbody.ant-table-tbody-virtual
+  .rc-virtual-list-scrollbar
+  .rc-virtual-list-scrollbar-thumb {
+  background: var(--dzone-color-gray-light);
+}
+
+/* Virtual list cell: ellipsis cells */
+.dz-table.ant-table-wrapper
+  .ant-table
+  .ant-table-container
+  .rc-virtual-list.ant-table-tbody.ant-table-tbody-virtual
+  .ant-table-cell.ant-table-cell-ellipsis {
+  padding-top: var(--dz-table-cell-ellipsis-padding-top, 0.5rem) !important;
+  font-size: var(--dz-table-cell-ellipsis-font-size, 0.875rem) !important;
+}
+
+/* Virtual list cell: non-ellipsis cells need flex alignment */
+.dz-table.ant-table-wrapper
+  .ant-table
+  .ant-table-container
+  .rc-virtual-list.ant-table-tbody.ant-table-tbody-virtual
+  .ant-table-cell:not(.ant-table-cell-ellipsis) {
+  display: flex !important;
+  align-items: center !important;
+}
+
+/* Border spacing between rows */
+.dz-table.ant-table-wrapper .ant-table .ant-table-container table {
+  border-spacing: 0 0.125rem;
+}
+
+/* Row/cell base styles */
+.dz-table.ant-table-wrapper .ant-table .ant-table-container tr,
+.dz-table.ant-table-wrapper .ant-table .ant-table-container .ant-table-row {
+  border-radius: var(--border-radius-default);
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+}
+
+.dz-table.ant-table-wrapper .ant-table .ant-table-container tr td,
+.dz-table.ant-table-wrapper .ant-table .ant-table-container tr th,
+.dz-table.ant-table-wrapper .ant-table .ant-table-container tr .ant-table-cell,
+.dz-table.ant-table-wrapper .ant-table .ant-table-container .ant-table-row .ant-table-cell {
+  border-bottom: none !important;
+  background-color: #fff !important;
+}
+
+/* Sticky column shadows */
+.dz-table.ant-table-wrapper .ant-table .ant-table-container tr .ant-table-cell-fix-left,
+.dz-table.ant-table-wrapper .ant-table .ant-table-container .ant-table-row .ant-table-cell-fix-left {
+  box-shadow: none;
+}
+
+.dz-table.ant-table-wrapper .ant-table .ant-table-container tr .ant-table-cell-fix-right,
+.dz-table.ant-table-wrapper .ant-table .ant-table-container .ant-table-row .ant-table-cell-fix-right {
+  box-shadow: 0px 0px 16px 0px rgba(35, 90, 237, 0.16);
+}
+
+/* Header cell styles */
+.dz-table.ant-table-wrapper .ant-table .ant-table-container tr th,
+.dz-table.ant-table-wrapper .ant-table .ant-table-container tr th.ant-table-cell {
+  padding: 0 1rem !important;
+  height: var(--dz-table-cell-th-height, 2.5rem) !important;
+  font-size: var(--dz-table-cell-th-font-size, 0.875rem) !important;
+}
+
+/* Header separator */
+.dz-table.ant-table-wrapper .ant-table .ant-table-container tr th::before,
+.dz-table.ant-table-wrapper .ant-table .ant-table-container tr th.ant-table-cell::before {
+  background-color: #707070 !important;
+}
+
+/* Data cell styles — matches both regular td and virtual .ant-table-row cells */
+.dz-table.ant-table-wrapper .ant-table .ant-table-container tr td,
+.dz-table.ant-table-wrapper .ant-table .ant-table-container tr td.ant-table-cell,
+.dz-table.ant-table-wrapper .ant-table .ant-table-container .ant-table-row .ant-table-cell {
+  padding: 0.625rem 1rem 0;
+  height: var(--dz-table-cell-td-height, 2.5rem) !important;
+  font-size: var(--dz-table-cell-td-font-size, 0.875rem) !important;
+}
+
+/* Legacy table overrides */
+.legacy-dz-table {
+  --dz-table-cell-ellipsis-padding-top: 1rem;
+  --dz-table-cell-ellipsis-font-size: 1rem;
+  --dz-table-cell-th-height: 2.875rem;
+  --dz-table-cell-th-font-size: 1rem;
+  --dz-table-cell-td-height: 3.5rem;
+  --dz-table-cell-td-font-size: 1rem;
+}
+
+/* Basic details row cell (color bar touches left edge) */
+.basic-details-row-cell {
+  padding-left: 0 !important;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+/* Selectable rows: remove left padding from first cell */
+.dz-table.rows-selectable .ant-table-row .ant-table-cell:first-child {
+  padding-left: 0 !important;
+}
+
+.dz-table.rows-selectable .ant-table-container .ant-table-header .ant-table-thead tr th.ant-table-cell:nth-child(2) {
+  padding-left: 3rem;
+}
+
+/* Row hover highlight */
+.row-hover-highlight .ant-table .ant-table-container .ant-table-tbody .ant-table-row .ant-table-cell-row-hover,
+.row-hover-highlight .ant-table .ant-table-container .ant-table-tbody .ant-table-row:hover .ant-table-cell {
+  cursor: pointer;
+  background: #ebeef1 !important;
+}
+
+/* Auto height cells */
+.cell-height-max-content .ant-table .ant-table-container .ant-table-tbody .ant-table-row .ant-table-cell {
+  height: auto;
+}
+
+/* Action button — icon-only, no border/bg */
+.icon-only-button.ant-btn {
+  padding: 0 !important;
+  margin: 0 !important;
+  border: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  min-width: auto !important;
+  width: auto !important;
+  height: auto !important;
+  line-height: 0 !important;
+}
+
+.icon-only-button.ant-btn:hover,
+.icon-only-button.ant-btn:focus,
+.icon-only-button.ant-btn:active {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.icon-only-button.ant-btn .ant-btn-icon {
+  margin: 0 !important;
+}

@@ -92,6 +92,7 @@ export const PermissionCheckbox: FC<IPermissionCheckboxProps> = ({
 
   return (
     <Checkbox
+      className="dz-permission-checkbox"
       checked={isChecked}
       disabled={isDisabled}
       onChange={(e) => handleToggle(e.target.checked)}

@@ -1,0 +1,46 @@
+.profileCard {
+  background: var(--dzone-color-white);
+  border-radius: var(--dzone-radius-md);
+  padding: var(--dzone-spacing-2xl);
+  width: 100%;
+}
+
+.fieldHeader {
+  gap: var(--dzone-spacing-xs);
+  align-items: center;
+}
+
+.fieldLabel {
+  font-size: var(--dzone-font-size-base);
+  font-weight: var(--dzone-font-weight-bold);
+}
+
+.fieldValue {
+  background: var(--dzone-color-gray-50);
+  width: 100%;
+  padding: var(--dzone-spacing-md);
+  border-radius: var(--dzone-radius-md);
+}
+
+.fieldText {
+  color: var(--dzone-color-gray-600);
+  font-size: var(--dzone-font-size-base);
+  font-weight: var(--dzone-font-weight-bold);
+}
+
+.tagContainer {
+  width: 100%;
+  background: var(--dzone-color-gray-50);
+  padding: var(--dzone-spacing-sm) var(--dzone-spacing-lg);
+  border-radius: var(--dzone-radius-md);
+  gap: var(--dzone-spacing-md);
+}
+
+.tag {
+  background: var(--dzone-color-brand-btn-bg);
+  border: none;
+  border-radius: var(--dzone-radius-md);
+  padding: var(--dzone-spacing-xs) var(--dzone-spacing-lg);
+  color: var(--dzone-color-gray-600);
+  font-weight: 500;
+}

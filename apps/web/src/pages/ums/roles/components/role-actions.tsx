@@ -1,6 +1,6 @@
 import { type FC } from 'react';
 import { Button, Dropdown, Tooltip } from 'antd';
-import { MoreOutlined } from '@ant-design/icons';
+import { ThreeDotsActionsIcon } from '@dzone/shared-ui';
 import { useNavigate } from 'react-router';
 import { useTranslation } from 'react-i18next';
 import { usePermissionCheck } from '@dzone/shared-auth';
@@ -73,11 +73,12 @@ export const RoleActions: FC<IRoleActionsProps> = ({
   ];
 
   return (
-    <Dropdown menu={{ items }} placement="bottomLeft" trigger={['click']}>
+    <Dropdown menu={{ items }} placement="bottomLeft">
       <Button
         onClick={(e) => e.stopPropagation()}
-        icon={<MoreOutlined />}
+        icon={<ThreeDotsActionsIcon />}
         type="text"
+        className="icon-only-button"
       />
     </Dropdown>
   );

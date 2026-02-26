@@ -1,0 +1,174 @@
+.paginationContainer {
+  display: flex;
+  align-items: center;
+  gap: var(--dzone-spacing-3xl);
+  justify-content: flex-end;
+  padding: 0.25rem 1rem;
+  /* background-color: #ffffff; */
+  border: 1px solid #f6f6f6;
+  border-radius: 0.5rem;
+  min-height: 2.5rem;
+}
+
+.rowsSelector {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--dzone-spacing-sm);
+}
+
+.rowsLabel {
+  color: var(--dzone-pagination-text-color);
+  font-size: var(--dzone-font-size-base);
+  font-weight: var(--dzone-font-weight-normal);
+}
+
+.pageSizeSelect {
+  width: var(--dzone-width-pagination-select);
+  height: var(--dzone-pagination-button-size);
+}
+
+.pageSizeSelect:global(
+    .ant-select-outlined:not(.ant-select-disabled):not(
+        .ant-select-customize-input
+      )
+  )
+  :global(.ant-select-selector) {
+  height: var(--dzone-pagination-button-size);
+  padding: 0 var(--dzone-spacing-sm);
+  display: flex;
+  align-items: center;
+  border: none;
+  box-shadow: none;
+  border-bottom: 1px solid #f6f6f6;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+.pageSizeSelect:global(
+    .ant-select-outlined:not(.ant-select-disabled):not(
+        .ant-select-customize-input
+      ):hover
+  )
+  :global(.ant-select-selector) {
+  border: none;
+  border-bottom: 1px solid #f6f6f6;
+  box-shadow: none;
+}
+
+.pageSizeSelect:global(
+    .ant-select-focused:not(.ant-select-disabled).ant-select-outlined:not(
+        .ant-select-customize-input
+      )
+  )
+  :global(.ant-select-selector) {
+  border: none;
+  border-bottom: 1px solid #f6f6f6;
+  box-shadow: none;
+}
+
+.pageSizeSelect :global(.ant-select-selection-item) {
+  line-height: var(--dzone-pagination-button-size);
+  font-size: var(--dzone-font-size-base);
+  color: var(--dzone-pagination-text-color);
+  font-weight: var(--dzone-font-weight-medium);
+}
+
+.pageSizeDropdown {
+  padding: 4px;
+}
+
+.pageSizeDropdown :global(.ant-select-item) {
+  font-size: var(--dzone-font-size-md);
+  color: var(--dzone-pagination-text-color);
+}
+
+.pageSizeDropdown :global(.ant-select-item-option-content) {
+  color: var(--dzone-pagination-text-color);
+}
+
+.pageSizeDropdown :global(.ant-select-item-option-selected) {
+  background-color: rgba(35, 90, 237, 0.1);
+}
+
+.pageSizeDropdown
+  :global(.ant-select-item-option-selected .ant-select-item-option-content) {
+  color: var(--dzone-pagination-text-color);
+  font-weight: var(--dzone-font-weight-medium);
+}
+
+.pageSizeDropdown
+  :global(
+    .ant-select-item-option-active:not(.ant-select-item-option-disabled)
+  ) {
+  background-color: rgba(35, 90, 237, 0.05);
+}
+
+.pageSizeDropdown
+  :global(.ant-select-item-option-active .ant-select-item-option-content) {
+  color: var(--dzone-pagination-text-color);
+}
+
+.pageSizeSelect :global(.ant-select-arrow) {
+  color: var(--dzone-pagination-text-color);
+  margin-right: -0.5rem;
+}
+
+.itemsInfo {
+  color: var(--dzone-pagination-text-color);
+  font-size: var(--dzone-font-size-base);
+  font-weight: var(--dzone-font-weight-normal);
+  white-space: nowrap;
+}
+
+.navigationButtons {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--dzone-spacing-sm);
+}
+
+:global(.ant-btn.ant-btn-icon-only).customWidth {
+  width: 2rem;
+  min-width: 2rem;
+}
+
+:global(.ant-btn.ant-btn-icon-only).customWidth svg {
+  width: 0.875rem;
+  height: 0.875rem;
+}
+
+.navButtonPrimary svg {
+  font-size: 0.875rem !important;
+}
+
+.navButtonPrimary {
+  width: var(--dzone-pagination-button-size);
+  height: var(--dzone-pagination-button-size);
+  min-width: var(--dzone-pagination-button-size);
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  background-color: var(--dzone-pagination-button-bg) !important;
+  border-color: var(--dzone-pagination-button-bg) !important;
+}
+
+.navButtonPrimary:not(:disabled) svg {
+  color: #000000 !important;
+}
+
+.navButtonPrimary:hover:not(:disabled) {
+  background-color: var(--dzone-pagination-button-hover-bg) !important;
+  border-color: var(--dzone-pagination-button-hover-bg) !important;
+}
+
+.navButtonPrimary:disabled {
+  background-color: var(--dzone-pagination-button-disabled-bg) !important;
+  border-color: var(--dzone-pagination-button-disabled-bg) !important;
+  opacity: 1 !important;
+  cursor: not-allowed;
+}
+
+.navButtonPrimary:disabled svg {
+  color: var(--dzone-pagination-button-disabled-color) !important;
+}

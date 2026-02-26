@@ -1,7 +1,5 @@
-import { Typography } from 'antd';
-
-const { Title } = Typography;
+import { ProfileContainer } from './components/profile-container';
 
 export default function ProfilePage() {
-  return <Title level={3}>Profile</Title>;
+  return <ProfileContainer />;
 }

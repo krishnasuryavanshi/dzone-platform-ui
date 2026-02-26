@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
-import { Flex, Typography, Pagination, Button, notification } from 'antd';
+import { Flex, Typography, notification } from 'antd';
+import { SimplePagination, GradientButton } from '@dzone/shared-ui';
 import { useNavigate } from 'react-router';
 import { useTranslation } from 'react-i18next';
 import { useQueryState } from '@dzone/shared-lib';
@@ -69,25 +70,21 @@ export const RoleContainer = () => {
       <Flex justify="space-between" align="center">
         <Text strong>{t('Roles & Permissions')}</Text>
         <Hideable show={canCreate}>
-          <Button type="primary" onClick={() => navigate('/ums/roles/create')}>
+          <GradientButton onClick={() => navigate('/ums/roles/create')}>
             {t('Create New Role')}
-          </Button>
+          </GradientButton>
         </Hideable>
       </Flex>
       <Flex vertical style={{ flex: 1 }}>
         <RoleList roles={roles} onToggleStatus={handleToggleStatus} />
       </Flex>
       <Hideable show={totalRecords > 0}>
-        <Flex justify="end">
-          <Pagination
-            current={pageNo}
-            pageSize={pageSize}
-            total={totalRecords}
-            onChange={handlePageChange}
-            showSizeChanger
-            showTotal={(total) => `Total ${total} items`}
-          />
-        </Flex>
+        <SimplePagination
+          current={pageNo}
+          pageSize={pageSize}
+          total={totalRecords}
+          onChange={handlePageChange}
+        />
       </Hideable>
     </Flex>
   );

@@ -1,0 +1,130 @@
+/* ── Form Control Items (matching old form-control-item.scss) ── */
+
+.form-control-item .ant-form-item-label
+  > label.ant-form-item-required:not(
+    .ant-form-item-required-mark-optional
+  )::before {
+  position: absolute;
+  right: 0;
+  color: #000;
+}
+
+.form-control-item .ant-input:not(.ant-select, .ant-checkbox),
+.form-control-item .ant-input-affix-wrapper:not(.ant-select, .ant-checkbox) {
+  background-color: #fff;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+.form-control-item .ant-select-selector {
+  background-color: #fafafa;
+  border: 1px solid #d9d9d9;
+  box-shadow: none;
+}
+
+.form-control-item .ant-select:hover .ant-select-selector {
+  border-color: #8c8c8c;
+}
+
+.form-control-item .ant-select-focused .ant-select-selector {
+  border-color: #8c8c8c !important;
+  box-shadow: none !important;
+}
+
+/* ── Module Tabs ── */
+
+.role-modules-tabs {
+  transition: none !important;
+  position: relative;
+}
+
+.role-modules-tabs .ant-tabs-nav::before {
+  display: none;
+}
+
+.role-modules-tabs .ant-tabs-nav-wrap {
+  min-width: 12.5rem;
+}
+
+.role-modules-tabs .ant-tabs-tab {
+  background: #fafafa !important;
+  border-radius: 5px !important;
+  padding: 8px 12px !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.role-modules-tabs .ant-tabs-tab + .ant-tabs-tab {
+  margin-top: 8px !important;
+}
+
+.role-modules-tabs .ant-tabs-tab:hover {
+  background: #f5f5f5 !important;
+}
+
+.role-modules-tabs .ant-tabs-tab-active {
+  background: #e8e8e8 !important;
+}
+
+.role-modules-tabs .ant-tabs-nav .ant-tabs-nav-list {
+  gap: 0.25rem;
+}
+
+.role-modules-tabs .ant-tabs-ink-bar {
+  width: 4px;
+  height: 0;
+  border-top: 1.25rem solid white;
+  border-bottom: 1.25rem solid white;
+  border-left: 1.5rem solid #e8e8e8;
+  transition: none;
+  right: 1px;
+  position: absolute;
+  background-color: #595959;
+  z-index: 1;
+}
+
+.role-modules-tabs .ant-tabs-content-holder {
+  padding-left: 2.22rem;
+  border-left: none !important;
+}
+
+/* ── Action Item Switch (matching old role-modules.scss) ── */
+
+.action-item-switch {
+  background-color: #d9d9d9;
+  transition: background-color 0.3s ease;
+}
+
+.action-item-switch.ant-switch.ant-switch-checked {
+  background-color: #28a745;
+}
+
+.action-item-switch.ant-switch.ant-switch-checked:hover:not(
+    .ant-switch-disabled
+  ) {
+  background-color: #24963e !important;
+}
+
+.action-item-switch:hover:not(.ant-switch-checked):not(.ant-switch-disabled) {
+  background-color: #c6c6c6;
+}
+
+/* ── Permission Checkbox (matching old permission-checkbox-container.scss) ── */
+
+.dz-permission-checkbox.ant-checkbox-wrapper-disabled .ant-checkbox {
+  opacity: 0.4;
+}
+
+.dz-permission-checkbox.ant-checkbox-wrapper-disabled
+  .ant-checkbox-input:checked
+  + .ant-checkbox-inner {
+  background: #323131;
+  border-color: #323131;
+}
+
+.dz-permission-checkbox.ant-checkbox-wrapper-disabled
+  .ant-checkbox-input:checked
+  + .ant-checkbox-inner::after {
+  border-color: white;
+}

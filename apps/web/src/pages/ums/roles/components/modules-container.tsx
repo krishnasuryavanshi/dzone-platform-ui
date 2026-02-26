@@ -94,12 +94,12 @@ export const ModulesContainer: FC<IModulesContainerProps> = ({
       label: t(mod.name),
       children: (
         <Flex vertical gap="0.75rem">
-          <Text strong>{t('Actions')}</Text>
+          <Text strong>{t('Give permissions to the actions')}</Text>
           <Flex
             vertical
             gap="0.75rem"
             style={{
-              border: '1px solid #f0f0f0',
+              border: '1px solid #d9d9d9',
               borderRadius: '0.5rem',
               padding: '0.75rem',
               width: '75%',
@@ -122,8 +122,9 @@ export const ModulesContainer: FC<IModulesContainerProps> = ({
 
   return (
     <Flex vertical gap="0.75rem" style={{ minHeight: '40vh' }}>
-      <Text strong>{t('Modules')}</Text>
+      <Text strong>{t('Give permissions to the modules')}</Text>
       <Tabs
+        className="role-modules-tabs"
         tabPosition="left"
         activeKey={selectedModule ?? undefined}
         onChange={handleTabClick}

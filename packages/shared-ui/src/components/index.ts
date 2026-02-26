@@ -23,6 +23,10 @@ export * from './badge';
 export * from './alert';
 export * from './popconfirm';
 export * from './descriptions';
+export * from './simple-pagination';
+export * from './select';
+export * from './three-dots-actions-icon';
+export * from './gradient-button';
 
 // Compound components
 export * from './steps';

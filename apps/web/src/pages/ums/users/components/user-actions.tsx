@@ -1,6 +1,6 @@
 import { type FC } from 'react';
 import { Button, Dropdown } from 'antd';
-import { MoreOutlined } from '@ant-design/icons';
+import { ThreeDotsActionsIcon } from '@dzone/shared-ui';
 import { useNavigate } from 'react-router';
 import { usePermissionCheck } from '@dzone/shared-auth';
 import { UserActionsEnum } from '@dzone/shared-lib';
@@ -67,13 +67,13 @@ export const UserActions: FC<IUserActionsProps> = ({
     <Dropdown
       menu={{ items: items as any }}
       placement="bottomLeft"
-      trigger={['click']}
       disabled={!record.editable}
     >
       <Button
         onClick={(e) => e.stopPropagation()}
-        icon={<MoreOutlined />}
+        icon={<ThreeDotsActionsIcon />}
         type="text"
+        className="icon-only-button"
       />
     </Dropdown>
   );

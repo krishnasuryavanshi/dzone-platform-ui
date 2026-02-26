@@ -2,6 +2,7 @@ import React from 'react';
 import { Table } from 'antd';
 import type { TableProps } from 'antd/lib/table';
 import { useResizableColumns } from './use-resizable-columns';
+import './basic-table.css';
 
 export interface ITableProps<T> {
   style?: React.CSSProperties;

@@ -1,5 +1,6 @@
 import { type FC } from 'react';
-import { Button, Flex, Tooltip, Typography } from 'antd';
+import { Flex, Tooltip, Typography, Button } from 'antd';
+import { GradientButton } from '@dzone/shared-ui';
 import { useNavigate } from 'react-router';
 import { useTranslation } from 'react-i18next';
 import { Hideable } from '@dzone/shared-ui';
@@ -29,9 +30,9 @@ export const OrgListHeader: FC<IOrgListHeaderProps> = ({
             <Button onClick={onClearFilters}>{t('Clear Filters')}</Button>
           </Tooltip>
         </Hideable>
-        <Button type="primary" onClick={() => navigate('/organizations/create')}>
+        <GradientButton onClick={() => navigate('/organizations/create')}>
           {t('Create New')}
-        </Button>
+        </GradientButton>
       </Flex>
     </Flex>
   );
