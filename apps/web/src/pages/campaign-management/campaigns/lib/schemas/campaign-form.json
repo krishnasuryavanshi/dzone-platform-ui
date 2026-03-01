@@ -1,0 +1,613 @@
+[
+  {
+    "field": "marketerCode",
+    "fieldType": "searchableSelect",
+    "rules": [{ "required": true, "message": "This field is required" }],
+    "optionsType": "dynamic",
+    "optionsKey": "marketers",
+    "permissions": {
+      "view": "Campaign.VIEW.marketer",
+      "edit": "Campaign.EDIT.marketer",
+      "create": "Campaign.CREATE.marketer"
+    },
+    "label": "Marketer",
+    "span": 8,
+    "group": "marketer",
+    "placeholder": "Select Marketer"
+  },
+  {
+    "field": "tenantCode",
+    "fieldType": "text",
+    "disabled": true,
+    "viewOrder": 3,
+    "columnMetadata": { "isSearchable": true },
+    "permissions": {
+      "view": "Campaign.VIEW.marketerCode"
+    },
+    "label": "Marketer ID",
+    "placeholder": "Marketer ID",
+    "span": 8
+  },
+  {
+    "field": "marketer",
+    "fieldType": "text",
+    "dataIndex": "marketer",
+    "columnOrder": 2,
+    "viewOrder": 4,
+    "hidden": true,
+    "columnMetadata": {
+      "isSearchable": true,
+      "ellipsis": true,
+      "width": 200
+    },
+    "renderer": "marketerNameIdRenderer",
+    "permissions": {
+      "view": "Campaign.VIEW.marketer",
+      "edit": "Campaign.EDIT.marketer",
+      "create": "Campaign.CREATE.marketer"
+    },
+    "label": "Marketer",
+    "columnTranslationKey": "pages.campaigns.label.marketer"
+  },
+  {
+    "field": "name",
+    "fieldType": "text",
+    "maxLength": 255,
+    "rules": [
+      { "required": true, "message": "This field is required" },
+      {
+        "pattern": "^[a-zA-Z0-9 _-]*$",
+        "message": "Only - and _ special characters are allowed."
+      }
+    ],
+    "columnMetadata": {
+      "ellipsis": true,
+      "width": 300,
+      "isSearchable": true,
+      "fixed": "left"
+    },
+    "columnOrder": 1,
+    "viewOrder": 2,
+    "renderer": "campaignNameIdRenderer",
+    "permissions": {
+      "view": "Campaign.VIEW.campaignName",
+      "edit": "Campaign.EDIT.campaignName",
+      "create": "Campaign.CREATE.campaignName"
+    },
+    "label": "Campaign Name",
+    "columnTranslationKey": "pages.campaigns.label.campaign",
+    "span": 8,
+    "group": "campaign",
+    "placeholder": "Enter Campaign Name"
+  },
+  {
+    "field": "campaignId",
+    "fieldType": "text",
+    "hidden": true,
+    "columnMetadata": { "isSearchable": true },
+    "viewOrder": 1,
+    "permissions": {
+      "view": "Campaign.VIEW.campaignId",
+      "edit": "Campaign.EDIT.campaignId",
+      "create": "Campaign.CREATE.campaignId"
+    },
+    "label": "Campaign ID",
+    "placeholder": "CAMP12345"
+  },
+  {
+    "field": "campaignDescription",
+    "fieldType": "textArea",
+    "maxLength": 64000,
+    "viewOrder": 5,
+    "permissions": {
+      "view": "Campaign.VIEW.campaignDescription",
+      "edit": "Campaign.EDIT.campaignDescription",
+      "create": "Campaign.CREATE.campaignDescription"
+    },
+    "label": "Campaign Description",
+    "span": 8,
+    "group": "campaign",
+    "placeholder": "Enter Campaign Description"
+  },
+  {
+    "field": "campaignGoals",
+    "fieldType": "multiselect",
+    "optionsKey": "campaignGoals",
+    "optionsType": "dynamic",
+    "viewOrder": 6,
+    "permissions": {
+      "view": "Campaign.VIEW.campaignGoals",
+      "edit": "Campaign.EDIT.campaignGoals",
+      "create": "Campaign.CREATE.campaignGoals"
+    },
+    "label": "Campaign Goals",
+    "span": 8,
+    "group": "goals",
+    "placeholder": "Select Campaign Goals"
+  },
+  {
+    "field": "goalDescription",
+    "fieldType": "textArea",
+    "maxLength": 64000,
+    "viewOrder": 7,
+    "permissions": {
+      "view": "Campaign.VIEW.goalDescription",
+      "edit": "Campaign.EDIT.goalDescription",
+      "create": "Campaign.CREATE.goalDescription"
+    },
+    "label": "Goal Description",
+    "span": 8,
+    "group": "goals",
+    "placeholder": "Enter Goal Description"
+  },
+  {
+    "field": "targetStartDate",
+    "fieldType": "date",
+    "format": "DD MMM YYYY",
+    "renderer": "dateRenderer",
+    "columnOrder": 5,
+    "rules": [{ "required": true, "message": "This field is required" }],
+    "viewOrder": 8,
+    "columnMetadata": { "isDateRangeObjectFilter": true },
+    "permissions": {
+      "view": "Campaign.VIEW.targetStartDate",
+      "edit": "Campaign.EDIT.targetStartDate",
+      "create": "Campaign.CREATE.targetStartDate"
+    },
+    "label": "Target Start Date",
+    "columnTranslationKey": "pages.campaigns.label.targetStartDate",
+    "span": 8,
+    "group": "targetDates",
+    "placeholder": "Select Target Start Date"
+  },
+  {
+    "field": "targetEndDate",
+    "fieldType": "date",
+    "format": "DD MMM YYYY",
+    "renderer": "dateRenderer",
+    "columnOrder": 6,
+    "viewOrder": 9,
+    "columnMetadata": { "isDateRangeObjectFilter": true },
+    "permissions": {
+      "view": "Campaign.VIEW.targetEndDate",
+      "edit": "Campaign.EDIT.targetEndDate",
+      "create": "Campaign.CREATE.targetEndDate"
+    },
+    "label": "Target End Date",
+    "columnTranslationKey": "pages.campaigns.label.targetEndDate",
+    "span": 8,
+    "group": "targetDates",
+    "placeholder": "Select Target End Date"
+  },
+  {
+    "field": "campaignDuration",
+    "fieldType": "number",
+    "disabled": true,
+    "viewOrder": 10,
+    "permissions": {
+      "view": "Campaign.VIEW.targetStartDate",
+      "edit": "Campaign.EDIT.targetStartDate",
+      "create": "Campaign.CREATE.targetStartDate"
+    },
+    "label": "Campaign Duration (In Days)",
+    "span": 8,
+    "group": "targetDates"
+  },
+  {
+    "field": "deliveryMethod",
+    "fieldType": "select",
+    "optionsType": "dynamic",
+    "optionsKey": "deliveryMethod",
+    "viewOrder": 11,
+    "permissions": {
+      "view": "Campaign.VIEW.deliveryMethod",
+      "edit": "Campaign.EDIT.deliveryMethod",
+      "create": "Campaign.CREATE.deliveryMethod"
+    },
+    "label": "Delivery Method",
+    "span": 8,
+    "group": "delivery",
+    "placeholder": "Select Delivery Method"
+  },
+  {
+    "field": "deliveryContact",
+    "fieldType": "textArea",
+    "maxLength": 64000,
+    "viewOrder": 12,
+    "permissions": {
+      "view": "Campaign.VIEW.deliveryContact",
+      "edit": "Campaign.EDIT.deliveryContact",
+      "create": "Campaign.CREATE.deliveryContact"
+    },
+    "label": "Delivery Contact",
+    "span": 8,
+    "group": "delivery",
+    "placeholder": "Enter Delivery Contact"
+  },
+
+  {
+    "field": "deliveryDays",
+    "fieldType": "multiselect",
+    "optionsType": "dynamic",
+    "optionsKey": "deliveryDays",
+    "viewOrder": 13,
+    "permissions": {
+      "view": "Campaign.VIEW.deliveryDays",
+      "edit": "Campaign.EDIT.deliveryDays",
+      "create": "Campaign.CREATE.deliveryDays"
+    },
+    "label": "Delivery Day(s)",
+    "span": 8,
+    "group": "delivery",
+    "placeholder": "Select Delivery Day(s)"
+  },
+  {
+    "field": "budget",
+    "fieldType": "number",
+    "viewOrder": 14,
+    "columnOrder": 3,
+    "permissions": {
+      "view": "Campaign.VIEW.budget",
+      "edit": "Campaign.EDIT.budget",
+      "create": "Campaign.CREATE.budget"
+    },
+    "columnMetadata": { "isSearchable": true, "width": 150 },
+    "label": "Budget (USD)",
+    "columnTranslationKey": "pages.campaigns.label.budget",
+    "span": 8,
+    "group": "budget",
+    "placeholder": "Enter Campaign Budget"
+  },
+  {
+    "field": "paymentTerm",
+    "fieldType": "select",
+    "optionsType": "dynamic",
+    "optionsKey": "paymentTerm",
+    "viewOrder": 15,
+    "permissions": {
+      "view": "Campaign.VIEW.paymentTerm",
+      "edit": "Campaign.EDIT.paymentTerm",
+      "create": "Campaign.CREATE.paymentTerm"
+    },
+    "label": "Payment Term",
+    "span": 8,
+    "group": "budget",
+    "placeholder": "Select Payment Term"
+  },
+  {
+    "field": "invoicingTerm",
+    "fieldType": "select",
+    "optionsType": "dynamic",
+    "optionsKey": "invoicingTerm",
+    "viewOrder": 16,
+    "permissions": {
+      "view": "Campaign.VIEW.invoicingTerm",
+      "edit": "Campaign.EDIT.invoicingTerm",
+      "create": "Campaign.CREATE.invoicingTerm"
+    },
+    "label": "Invoicing Term",
+    "span": 8,
+    "group": "budget",
+    "placeholder": "Select Invoicing Term"
+  },
+  {
+    "field": "ioNumber",
+    "fieldType": "text",
+    "maxLength": 255,
+    "columnMetadata": {
+      "ellipsis": true,
+      "isSearchable": true
+    },
+    "viewOrder": 17,
+    "permissions": {
+      "view": "Campaign.VIEW.ioNumber",
+      "edit": "Campaign.EDIT.ioNumber",
+      "create": "Campaign.CREATE.ioNumber"
+    },
+    "label": "IO number",
+    "span": 8,
+    "group": "ioNumber",
+    "placeholder": "Enter IO Number"
+  },
+  {
+    "field": "ioFileId",
+    "fieldType": "IOUpload",
+    "uploadLabel": "Upload File",
+    "fileTypeName": "io",
+    "viewOrder": 18,
+    "viewType": "upload",
+    "permissions": {
+      "view": "Campaign.VIEW.ioFileId",
+      "edit": "Campaign.EDIT.ioFileId",
+      "create": "Campaign.CREATE.ioFileId"
+    },
+    "label": "Upload IO File",
+    "span": 8,
+    "group": "ioNumber"
+  },
+  {
+    "field": "salesforceOpportunityId",
+    "fieldType": "text",
+    "maxLength": 255,
+    "viewOrder": 19,
+    "permissions": {
+      "view": "Campaign.VIEW.salesforceOpportunityId",
+      "edit": "Campaign.EDIT.salesforceOpportunityId",
+      "create": "Campaign.CREATE.salesforceOpportunityId"
+    },
+    "label": "Salesforce Opportunity ID",
+    "span": 8,
+    "group": "salesforce",
+    "placeholder": "Enter Salesforce Opportunity ID"
+  },
+  {
+    "field": "salesforceOpportunityName",
+    "fieldType": "text",
+    "maxLength": 255,
+    "viewOrder": 20,
+    "permissions": {
+      "view": "Campaign.VIEW.salesforceOpportunityName",
+      "edit": "Campaign.EDIT.salesforceOpportunityName",
+      "create": "Campaign.CREATE.salesforceOpportunityName"
+    },
+    "label": "Salesforce Opportunity Name",
+    "span": 8,
+    "group": "salesforce",
+    "placeholder": "Enter Salesforce Opportunity Name"
+  },
+  {
+    "field": "salesforceOpportunityLink",
+    "fieldType": "text",
+    "maxLength": 255,
+    "viewOrder": 21,
+    "permissions": {
+      "view": "Campaign.VIEW.salesforceOpportunityLink",
+      "edit": "Campaign.EDIT.salesforceOpportunityLink",
+      "create": "Campaign.CREATE.salesforceOpportunityLink"
+    },
+    "label": "Salesforce Opportunity Link",
+    "span": 8,
+    "group": "salesforce",
+    "placeholder": "Enter Salesforce Opportunity Link"
+  },
+  {
+    "field": "bookedRevenue",
+    "fieldType": "number",
+    "rules": [
+      {
+        "pattern": "^(\\d+)(\\.\\d+)?$",
+        "message": "This is not a valid input number."
+      }
+    ],
+    "viewOrder": 22,
+    "permissions": {
+      "view": "Campaign.VIEW.bookedRevenue",
+      "edit": "Campaign.EDIT.bookedRevenue",
+      "create": "Campaign.CREATE.bookedRevenue"
+    },
+    "label": "Booked Revenue",
+    "span": 8,
+    "group": "revenue",
+    "placeholder": "Enter Booked Revenue"
+  },
+  {
+    "field": "billingSystemReferenceId",
+    "fieldType": "text",
+    "maxLength": 255,
+    "viewOrder": 23,
+    "permissions": {
+      "view": "Campaign.VIEW.billingSystemReferenceId",
+      "edit": "Campaign.EDIT.billingSystemReferenceId",
+      "create": "Campaign.CREATE.billingSystemReferenceId"
+    },
+    "label": "Billing SystemReference Id",
+    "span": 8,
+    "group": "revenue",
+    "placeholder": "Enter Billing System Reference Id"
+  },
+  {
+    "field": "opportunityCloseDate",
+    "fieldType": "date",
+    "format": "DD MMM YYYY",
+    "viewOrder": 24,
+    "permissions": {
+      "view": "Campaign.VIEW.opportunityCloseDate",
+      "edit": "Campaign.EDIT.opportunityCloseDate",
+      "create": "Campaign.CREATE.opportunityCloseDate"
+    },
+    "label": "Opportunity Close date",
+    "span": 8,
+    "group": "revenue",
+    "placeholder": "Select Opportunity Close Date"
+  },
+
+  {
+    "field": "retainerContract",
+    "fieldType": "checkbox",
+    "showLabelInControl": true,
+    "valuePropName": "checked",
+    "viewOrder": 25,
+    "permissions": {
+      "view": "Campaign.VIEW.retainerContract",
+      "edit": "Campaign.EDIT.retainerContract",
+      "create": "Campaign.CREATE.retainerContract"
+    },
+    "label": "Retainer Contract",
+    "span": 8,
+    "group": "retainerContract"
+  },
+  {
+    "field": "agencyName",
+    "fieldType": "text",
+    "showLabelInControl": true,
+    "viewOrder": 26,
+    "permissions": {
+      "view": "Campaign.VIEW.agencyName",
+      "edit": "Campaign.EDIT.agencyName",
+      "create": "Campaign.CREATE.agencyName"
+    },
+    "label": "Agency Name",
+    "span": 8,
+    "group": "retainerContract",
+    "placeholder": "Enter Agency Name"
+  },
+  {
+    "field": "id",
+    "fieldType": "text",
+    "hidden": true
+  },
+  {
+    "field": "status",
+    "fieldType": "text",
+    "hidden": true,
+    "label": "Status",
+    "columnTranslationKey": "pages.campaigns.label.status",
+    "columnMetadata": {
+      "width": 300,
+      "isFilterable": true
+    },
+    "renderer": "statusRenderer",
+    "columnOrder": 4,
+    "viewOrder": 29,
+    "permissions": {
+      "view": "Campaign.VIEW.status"
+    }
+  },
+  {
+    "field": "totalLineItems",
+    "label": "Line Items",
+    "permissions": {
+      "view": "Campaign.VIEW"
+    }
+  },
+  {
+    "field": "lineItemsDeliveryPercentage",
+    "columnMetadata": { "width": 200 },
+    "columnOrder": 9,
+    "label": "Line Items Delivered (%)",
+    "columnTranslationKey": "pages.campaigns.label.lineItemsDeliveryPercentage",
+    "permissions": {
+      "view": "Campaign.VIEW"
+    }
+  },
+  {
+    "field": "actions",
+    "columnMetadata": { "fixed": "right", "width": 100 },
+    "renderer": "actionsRenderer",
+    "columnTranslationKey": "label.actions",
+    "columnOrder": 15,
+    "permissions": {
+      "view": "Campaign.VIEW"
+    }
+  },
+  {
+    "field": "actualStartDate",
+    "fieldType": "date",
+    "renderer": "dateRenderer",
+    "label": "Actual Start Date",
+    "columnTranslationKey": "pages.campaigns.label.actualStartDate",
+    "format": "DD MMM YYYY",
+    "columnOrder": 7,
+    "viewOrder": 27,
+    "columnMetadata": { "isDateRangeObjectFilter": true },
+    "hidden": true,
+    "permissions": {
+      "view": "Campaign.VIEW.actualStartDate"
+    }
+  },
+  {
+    "field": "actualEndDate",
+    "fieldType": "date",
+    "renderer": "dateRenderer",
+    "label": "Actual End Date",
+    "columnTranslationKey": "pages.campaigns.label.actualEndDate",
+    "format": "DD MMM YYYY",
+    "columnOrder": 8,
+    "viewOrder": 28,
+    "hidden": true,
+    "columnMetadata": { "isDateRangeObjectFilter": true },
+    "permissions": {
+      "view": "Campaign.VIEW.actualEndDate"
+    }
+  },
+  {
+    "field": "createdOn",
+    "fieldType": "date",
+    "format": "DD MMM YYYY",
+    "renderer": "dateRenderer",
+    "label": "Created On",
+    "columnTranslationKey": "pages.campaigns.label.createdAt",
+    "columnOrder": 12,
+    "hidden": true,
+    "columnMetadata": { "isDateFilter": true },
+    "permissions": {
+      "view": "Campaign.VIEW.createdOn"
+    }
+  },
+  {
+    "field": "createdBy",
+    "columnOrder": 11,
+    "label": "Created By",
+    "columnTranslationKey": "pages.campaigns.label.createdBy",
+    "columnMetadata": {
+      "ellipsis": true,
+      "width": 300,
+      "isSearchable": true
+    },
+    "permissions": {
+      "view": "Campaign.VIEW.createdBy"
+    }
+  },
+  {
+    "field": "updatedOn",
+    "fieldType": "date",
+    "renderer": "dateRenderer",
+    "label": "Updated On",
+    "columnTranslationKey": "pages.campaigns.label.updatedAt",
+    "format": "DD MMM YYYY",
+    "columnOrder": 14,
+    "hidden": true,
+    "columnMetadata": { "isDateFilter": true },
+    "permissions": {
+      "view": "Campaign.VIEW.updatedOn"
+    }
+  },
+  {
+    "field": "updatedBy",
+    "hidden": true,
+    "columnOrder": 13,
+    "label": "Updated By",
+    "columnTranslationKey": "pages.campaigns.label.updatedBy",
+    "columnMetadata": {
+      "ellipsis": true,
+      "width": 300,
+      "isSearchable": true
+    },
+    "permissions": {
+      "view": "Campaign.VIEW.updatedBy"
+    }
+  },
+  {
+    "field": "assignedTo",
+    "fieldType": "multiselect",
+    "optionsType": "dynamic",
+    "hasMultiselectSearch": true,
+    "dataIndex": "collaborators.assignedTo",
+    "optionsKey": "assignedTo",
+    "label": "Assigned To",
+    "columnTranslationKey": "pages.campaigns.label.assignedTo",
+    "columnMetadata": {
+      "ellipsis": true,
+      "width": 300,
+      "isFilterable": true
+    },
+    "renderer": "assignedToNamesRenderer",
+    "columnOrder": 10,
+    "viewOrder": 11,
+    "viewField": "collaborators.assignedTo",
+    "hidden": true,
+    "permissions": {
+      "view": "Campaign.VIEW.assignedTo"
+    }
+  }
+]

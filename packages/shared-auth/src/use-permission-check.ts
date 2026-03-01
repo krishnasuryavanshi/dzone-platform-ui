@@ -1,14 +1,25 @@
 import { usePermissionsStore } from '@dzone/shared-store';
 
 /**
- * Check if the current user has a specific permission.
+ * Check if the current user has a specific permission or set of permissions.
  *
  * @example
  * const canEdit = usePermissionCheck('Campaign.EDIT');
+ * const canUpload = usePermissionCheck(['Leads.VIEW', 'Leads.UPLOAD'], true); // all required
+ * const canAct = usePermissionCheck(['Leads.RETURN', 'Leads.PUBLISH']); // any matches
  */
-export function usePermissionCheck(permission: string): boolean {
+export function usePermissionCheck(
+  permission: string | string[],
+  requireAll?: boolean,
+): boolean {
   const { accesses } = usePermissionsStore();
-  return !!accesses[permission];
+  if (typeof permission === 'string') {
+    return !!accesses[permission];
+  }
+  if (requireAll) {
+    return permission.every((p) => !!accesses[p]);
+  }
+  return permission.some((p) => !!accesses[p]);
 }
 
 /**

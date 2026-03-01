@@ -1,0 +1,19 @@
+.blueHeader :global(.ant-drawer-header) {
+  background-color: #235aed;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+.blueHeader :global(.ant-drawer-title) {
+  color: #fff;
+  text-align: left;
+  flex: 1;
+}
+
+.blueHeader :global(.ant-drawer-close) {
+  color: #fff;
+  position: static;
+  margin-left: 0.75rem;
+  order: 1;
+}

@@ -1,0 +1,10 @@
+.loadingContainer {
+  min-height: 20rem;
+  padding: var(--dzone-spacing-4xl);
+  padding-top: 0;
+}
+
+.noDataContainer {
+  padding: var(--dzone-spacing-4xl);
+  text-align: center;
+}

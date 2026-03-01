@@ -1,0 +1,10 @@
+.assignSupplier {
+  cursor: pointer;
+  color: var(--dzone-color-black);
+  transition: all 0.2s ease;
+}
+
+.assignSupplier:hover {
+  color: var(--dzone-color-brand-black);
+  text-decoration: underline;
+}

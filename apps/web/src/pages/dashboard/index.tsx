@@ -1,7 +1,5 @@
-import { Typography } from 'antd';
-
-const { Title } = Typography;
+import { DashboardContainer } from './components/dashboard-container';
 
 export default function DashboardPage() {
-  return <Title level={3}>Dashboard</Title>;
+  return <DashboardContainer />;
 }

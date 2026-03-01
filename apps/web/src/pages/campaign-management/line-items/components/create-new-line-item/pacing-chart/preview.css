@@ -1,0 +1,3 @@
+.white-arrow-tooltip .ant-tooltip-arrow::before {
+  background-color: #fff !important;
+}

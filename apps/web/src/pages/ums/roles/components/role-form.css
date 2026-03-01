@@ -72,16 +72,7 @@
 }
 
 .role-modules-tabs .ant-tabs-ink-bar {
-  width: 4px;
-  height: 0;
-  border-top: 1.25rem solid white;
-  border-bottom: 1.25rem solid white;
-  border-left: 1.5rem solid #e8e8e8;
-  transition: none;
-  right: 1px;
-  position: absolute;
-  background-color: #595959;
-  z-index: 1;
+  display: none !important;
 }
 
 .role-modules-tabs .ant-tabs-content-holder {

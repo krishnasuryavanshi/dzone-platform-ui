@@ -1,7 +1,5 @@
-import { Typography } from 'antd';
-
-const { Title } = Typography;
+import { DzentContainer } from './components/dzent-container';
 
 export default function DzentPage() {
-  return <Title level={3}>Dzent AI</Title>;
+  return <DzentContainer />;
 }

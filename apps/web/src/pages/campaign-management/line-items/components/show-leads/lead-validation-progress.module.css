@@ -1,0 +1,36 @@
+.progressContainer {
+  padding: var(--dzone-spacing-sm) var(--dzone-spacing-3xl);
+  background: var(--dzone-color-white);
+  border-radius: var(--dzone-radius-lg);
+  border: 0.5px solid var(--dzone-color-border-lighter);
+  min-height: 2.5rem;
+  gap: var(--dzone-spacing-3xl);
+}
+
+.label {
+  font-size: var(--dzone-font-size-base);
+  white-space: nowrap;
+}
+
+.progressBar {
+  min-width: 12rem;
+  max-width: 16rem;
+  flex: 1;
+  margin-bottom: 0;
+}
+
+.progressCount {
+  font-size: var(--dzone-font-size-base);
+  font-weight: var(--dzone-font-weight-medium);
+  color: var(--dzone-color-gray-dark);
+  white-space: nowrap;
+  min-width: 5rem;
+  text-align: center;
+}
+
+.statusText {
+  font-size: var(--dzone-font-size-sm);
+  white-space: nowrap;
+  flex-shrink: 0;
+  color: var(--dzone-color-gray);
+}

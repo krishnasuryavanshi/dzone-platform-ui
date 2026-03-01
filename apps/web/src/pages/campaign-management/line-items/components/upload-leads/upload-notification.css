@@ -1,0 +1,12 @@
+.dz-one-upload-notification .icon {
+  font-size: 2rem;
+  color: var(--dz-upload-icon-color);
+}
+
+.dz-one-upload-notification.Success {
+  --dz-upload-icon-color: #04ca56;
+}
+
+.dz-one-upload-notification.Error {
+  --dz-upload-icon-color: #ff602e;
+}

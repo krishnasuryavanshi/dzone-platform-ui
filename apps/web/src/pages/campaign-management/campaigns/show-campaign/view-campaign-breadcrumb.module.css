@@ -1,0 +1,10 @@
+/* Combined selector for higher specificity */
+.campaignId.hoverUnderline {
+  text-decoration: none;
+}
+
+/* Hover state with double class specificity (0,2,1) */
+.campaignId.hoverUnderline:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}

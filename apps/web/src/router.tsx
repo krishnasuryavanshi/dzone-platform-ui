@@ -14,6 +14,16 @@ const DashboardPage = lazy(() => import('./pages/dashboard'));
 const OrganizationsPage = lazy(() => import('./pages/admin/organizations'));
 const OrgFormPage = lazy(() => import('./pages/admin/organizations/components/org-form-page'));
 const CampaignManagementPage = lazy(() => import('./pages/campaign-management'));
+const CampaignsPage = lazy(() => import('./pages/campaign-management/campaigns'));
+const CreateCampaignPage = lazy(() => import('./pages/campaign-management/campaigns/create-page'));
+const ViewCampaignPage = lazy(() => import('./pages/campaign-management/campaigns/view'));
+const EditCampaignPage = lazy(() => import('./pages/campaign-management/campaigns/edit'));
+const LineItemsPage = lazy(() => import('./pages/campaign-management/line-items'));
+const CreateLineItemPage = lazy(() => import('./pages/campaign-management/line-items/create-page'));
+const ViewLineItemPage = lazy(() => import('./pages/campaign-management/line-items/view'));
+const EditLineItemPage = lazy(() => import('./pages/campaign-management/line-items/edit'));
+const DeliveryLogsPage = lazy(() => import('./pages/campaign-management/line-items/delivery-logs'));
+const LeadsPage = lazy(() => import('./pages/campaign-management/leads'));
 const AnalyticsPage = lazy(() => import('./pages/analytics'));
 const UsersPage = lazy(() => import('./pages/ums/users'));
 const UserFormPage = lazy(() => import('./pages/ums/users/components/user-form-page'));
@@ -69,14 +79,43 @@ export const router = createBrowserRouter([
           // Campaign Management
           {
             path: '/campaign-management',
-            element: (
-              <PermissionGuard
-                required={['Campaign.VIEW', 'Line Item.VIEW', 'Leads.VIEW']}
-              />
-            ),
             children: [
               { index: true, element: <CampaignManagementPage /> },
-              { path: '*', element: <CampaignManagementPage /> },
+
+              // Campaigns
+              {
+                path: 'campaigns',
+                element: <PermissionGuard required={['Campaign.VIEW']} />,
+                children: [
+                  { index: true, element: <CampaignsPage /> },
+                  { path: 'create', element: <CreateCampaignPage /> },
+                  { path: ':campaignId', element: <ViewCampaignPage /> },
+                  { path: ':campaignUUId/edit', element: <EditCampaignPage /> },
+                ],
+              },
+
+              // Line Items
+              {
+                path: 'line-items',
+                element: <PermissionGuard required={['Line Item.VIEW']} />,
+                children: [
+                  { index: true, element: <LineItemsPage /> },
+                  { path: 'create', element: <CreateLineItemPage /> },
+                  { path: ':lineItemId', element: <ViewLineItemPage /> },
+                  { path: ':lineItemId/edit', element: <EditLineItemPage /> },
+                  {
+                    path: ':lineItemId/delivery-logs',
+                    element: <DeliveryLogsPage />,
+                  },
+                ],
+              },
+
+              // Leads
+              {
+                path: 'leads',
+                element: <PermissionGuard required={['Leads.VIEW']} />,
+                children: [{ index: true, element: <LeadsPage /> }],
+              },
             ],
           },
 

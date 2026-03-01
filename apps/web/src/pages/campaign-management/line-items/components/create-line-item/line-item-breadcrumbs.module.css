@@ -1,0 +1,29 @@
+/* Base class */
+.lineItemId {
+  cursor: default;
+}
+
+/* Hover helper class */
+.hoverUnderline {
+  text-decoration: none;
+}
+
+/* Combined selector for higher specificity */
+.lineItemId.hoverUnderline {
+  text-decoration: none;
+}
+
+/* Hover state with double class specificity (0,2,1) */
+.lineItemId.hoverUnderline:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Target child anchor tags with chained classes */
+.lineItemId.hoverUnderline a {
+  text-decoration: none;
+}
+
+.lineItemId.hoverUnderline:hover a {
+  text-decoration: underline;
+}

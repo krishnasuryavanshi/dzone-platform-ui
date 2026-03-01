@@ -1,0 +1,51 @@
+.deliverySchedulesContainer {
+  padding: 0;
+}
+
+.loadingContainer {
+  min-height: 12.5rem;
+}
+
+.primaryText {
+  display: block;
+  font-size: var(--dzone-font-size-md);
+  color: var(--dzone-color-gray-dark);
+}
+
+.secondaryText {
+  display: block;
+  font-size: var(--dzone-font-size-base);
+  color: var(--dzone-color-gray-light);
+  margin-top: var(--dzone-spacing-2xs);
+}
+
+.actionButton {
+  width: 2rem;
+}
+
+.schedulesTable {
+  background: var(--dzone-color-white);
+  border-radius: var(--dzone-spacing-sm);
+}
+
+.schedulesTable :global(.ant-table) {
+  font-size: var(--dzone-font-size-base);
+}
+
+.schedulesTable :global(.ant-table-thead > tr > th) {
+  background: var(--dzone-color-bg-lighter-gray);
+  font-weight: 600;
+  color: var(--dzone-color-gray);
+}
+
+.schedulesTable :global(.ant-table-tbody > tr > td) {
+  padding: var(--dzone-spacing-lg) var(--dzone-spacing-2xl);
+}
+
+.schedulesTable :global(.ant-table-tbody > tr:hover > td) {
+  background: var(--dzone-color-bg-light-gray);
+}
+
+.schedulesTable :global(.ant-dropdown-trigger) {
+  cursor: pointer;
+}

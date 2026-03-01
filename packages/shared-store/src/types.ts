@@ -30,6 +30,8 @@ export interface IUser {
   lastName: string;
   name?: string;
   image?: string;
+  restrictedAccessKeys?: string[];
+  tenantCode?: string[];
 }
 
 export interface IRole {

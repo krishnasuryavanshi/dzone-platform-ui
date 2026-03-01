@@ -1,0 +1,13 @@
+.customStatusSelect {
+  min-width: 16rem;
+  width: 16rem;
+}
+
+.customStatusSelect :global(.ant-select-selector span) {
+  font-size: 0.875rem;
+}
+
+.customStatusSelect:global(.ant-select-single.ant-select-lg) {
+  font-size: 0.875rem;
+  height: 2rem;
+}

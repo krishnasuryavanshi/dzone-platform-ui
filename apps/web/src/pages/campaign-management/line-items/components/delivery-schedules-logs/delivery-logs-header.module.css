@@ -1,0 +1,17 @@
+.headerTop {
+  margin-bottom: var(--dzone-spacing-lg);
+}
+
+.backButton {
+  padding-left: 0;
+}
+
+.filterForm {
+  display: flex;
+  gap: var(--dzone-spacing-2xl);
+  align-items: center;
+}
+
+.filterForm :global(.ant-form-item) {
+  margin-bottom: 0;
+}

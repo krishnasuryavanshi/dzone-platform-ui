@@ -1,7 +1,5 @@
-import { Typography } from 'antd';
-
-const { Title } = Typography;
+import { JobsContainer } from './components/jobs-container';
 
 export default function JobsPage() {
-  return <Title level={3}>Jobs</Title>;
+  return <JobsContainer />;
 }

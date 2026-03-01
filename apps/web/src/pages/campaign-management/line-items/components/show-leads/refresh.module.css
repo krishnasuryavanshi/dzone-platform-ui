@@ -1,0 +1,28 @@
+.refreshButton {
+  height: 2rem;
+  box-shadow: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  border: 1px solid var(--dzone-color-brand-black);
+  background-color: var(--dzone-color-white);
+  transition: all 0.3s;
+}
+
+.refreshButton.refreshButton.refreshButton:hover,
+button.refreshButton.refreshButton:hover {
+  color: var(--dzone-color-white);
+  background-color: #e5e6eb;
+  border-color: var(--dzone-color-brand-black);
+}
+
+.refreshButton:focus {
+  outline: none;
+}
+
+.refreshIcon {
+  width: 17px;
+  height: 17px;
+}

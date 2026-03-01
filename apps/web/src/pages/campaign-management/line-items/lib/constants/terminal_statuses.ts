@@ -1,0 +1,1 @@
+export const TERMINAL_STATUSES = ['COMPLETED', 'FAILED', 'CANCELLED'];

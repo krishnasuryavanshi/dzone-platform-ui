@@ -1,0 +1,29 @@
+.dz-upload-dialog {
+  position: fixed;
+  top: 1.25rem;
+  right: 1rem;
+  border-radius: 8px;
+  padding: 1rem;
+  z-index: 1001;
+  border: 2px solid var(--dz-upload-dilog-border-color);
+  background-color: var(--dz-upload-dilog-background-color);
+}
+
+.dz-upload-dialog .dz-upload-dialog-content {
+  width: var(--dz-upload-dilog-width, 28rem);
+}
+
+.dz-upload-dialog.Progress {
+  --dz-upload-dilog-background-color: #dee7ff;
+  --dz-upload-dilog-border-color: #235aed;
+}
+
+.dz-upload-dialog.Success {
+  --dz-upload-dilog-background-color: #e4ffef;
+  --dz-upload-dilog-border-color: #04ca56;
+}
+
+.dz-upload-dialog.Error {
+  --dz-upload-dilog-background-color: #ffe8e1;
+  --dz-upload-dilog-border-color: #ff602e;
+}

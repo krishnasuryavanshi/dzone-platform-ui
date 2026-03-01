@@ -1,0 +1,32 @@
+.stickyTable {
+  overflow-x: auto;
+}
+
+.stickyTable :global(.ant-table-cell-fix-left) {
+  z-index: 2;
+}
+
+.stickyTable :global(.ant-table-scroll) {
+  overflow-x: auto;
+}
+
+.mergedColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0;
+  padding: 0;
+}
+
+.mergedColumnName {
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: var(--dzone-color-text, rgba(0, 0, 0, 0.85));
+  line-height: 1.2;
+}
+
+.mergedColumnId {
+  font-size: 0.7rem;
+  color: var(--dzone-color-text-secondary, rgba(0, 0, 0, 0.45));
+  line-height: 1.2;
+}

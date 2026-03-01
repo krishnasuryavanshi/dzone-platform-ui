@@ -1,7 +1,5 @@
-import { Typography } from 'antd';
-
-const { Title } = Typography;
+import { Navigate } from 'react-router';
 
 export default function CampaignManagementPage() {
-  return <Title level={3}>Campaign Management</Title>;
+  return <Navigate to="/campaign-management/campaigns" replace />;
 }

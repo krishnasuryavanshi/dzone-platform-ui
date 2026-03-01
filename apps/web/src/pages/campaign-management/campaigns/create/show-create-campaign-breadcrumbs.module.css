@@ -1,0 +1,29 @@
+/* Base class */
+.campaignId {
+  cursor: default;
+}
+
+/* Hover helper class */
+.hoverUnderline {
+  text-decoration: none;
+}
+
+/* Combined selector for higher specificity */
+.campaignId.hoverUnderline {
+  text-decoration: none;
+}
+
+/* Hover state with double class specificity (0,2,1) */
+.campaignId.hoverUnderline:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Target child anchor tags with chained classes */
+.campaignId.hoverUnderline a {
+  text-decoration: none;
+}
+
+.campaignId.hoverUnderline:hover a {
+  text-decoration: underline;
+}

@@ -1,0 +1,43 @@
+.waitingBubble {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  height: 1.25rem;
+}
+
+.dot {
+  width: 0.6rem;
+  height: 0.6rem;
+  background: #999;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.7;
+  animation: waitingBounce 1s infinite alternate;
+}
+
+.dot1 {
+  animation-delay: 0s;
+}
+
+.dot2 {
+  animation-delay: 0.4s;
+}
+
+.dot3 {
+  animation-delay: 0.8s;
+}
+
+@keyframes waitingBounce {
+  0% {
+    transform: translateY(0);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translateY(-0.4rem);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 0.7;
+  }
+}

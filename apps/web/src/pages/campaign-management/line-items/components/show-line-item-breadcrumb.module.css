@@ -1,0 +1,9 @@
+.lineItemId {
+  text-decoration: none;
+  cursor: default;
+}
+
+.lineItemId:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
